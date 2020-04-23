@@ -37,7 +37,8 @@ hr {
     margin-left: 0;
 }
 
-h2 p {
+h2,
+p {
     text-align: center;
     color: white;
 }
@@ -46,6 +47,14 @@ ul {
     text-align: left;
     padding: 1em;
     margin: 80 auto;
+}
+
+a:visited {
+    color: rgb(6, 134, 12);
+}
+
+a:hover {
+    color: red;
 }
 
 footer {
