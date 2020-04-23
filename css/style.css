@@ -30,7 +30,6 @@ h4 {
 
 #picture {
     width: 150px;
-    z-index: 3;
     float: right;
     box-shadow: 10px 5px 5px #37393a36;
 }
@@ -54,7 +53,7 @@ ul {
 }
 
 a:visited {
-    color: rgb(6, 134, 12);
+    color: #e08206;
 }
 
 a:hover {
