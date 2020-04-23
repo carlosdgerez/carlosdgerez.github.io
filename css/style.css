@@ -19,6 +19,11 @@ header {
     background-color: hsla(30, 12%, 97%, 0.514);
 }
 
+header,
+footer {
+    background-color: #394968;
+}
+
 #picture {
     width: 150px;
     z-index: 3;
@@ -32,8 +37,9 @@ hr {
     margin-left: 0;
 }
 
-h2 {
+h2 p {
     text-align: center;
+    color: white;
 }
 
 ul {
@@ -49,9 +55,4 @@ footer {
     height: 35%;
     border: 1px solid #0f0f0f;
     border-radius: 1em;
-    background-color: hsla(30, 12%, 97%, 0.514);
-}
-
-p {
-    text-align: center;
 }
