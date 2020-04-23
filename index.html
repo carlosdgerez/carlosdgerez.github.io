@@ -14,7 +14,7 @@
 <body>
 
     <header>
-        <img id="picture" src="https://cdn.glitch.com/b344c7ef-71c1-4a1a-b4fb-2d18a041a4e0%2Farmchair-near-table-and-ottoman-2079249.jpg?v=1584792812879" width="90" alt="Student portrait" />
+        <img id="picture" src="https://cdn.glitch.com/b344c7ef-71c1-4a1a-b4fb-2d18a041a4e0%2Farmchair-near-table-and-ottoman-2079249.jpg?v=1584792812879" width="100" alt="Student portrait" />
         <h2>Carlos Gerez</h2>
 
     </header>
@@ -37,15 +37,18 @@
                 </li>
                 <li>
                     Lesson 04:
-                    <a href="" target="_blank"> Link</a>
+                    <a href="" target="_blank"> Link</a> |
                     <a href="" target="_blank"> Link</a>
                 </li>
             </ul>
     </main>
-    <footer id="name">
-        <h2>Here will go copywrhigt and links</h2>
+    <footer>
+        <p>&copy; 2020 | Carlos Gerez | Norway |<a href="https://www.byui.edu/online" target="_blanK">BYU Online Learning</a></p>
+        <p>Last Updated: <span id="update"></span></p>
     </footer>
-
+    <script>
+        document.getElementById("update").textContent = document.lastModified;
+    </script>
 
 
 </body>
