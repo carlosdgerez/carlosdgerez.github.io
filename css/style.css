@@ -8,20 +8,19 @@ footer {
 body {
     height: 200px;
     padding: 5em;
-    border: 1px solid #0f0f0f;
-    border-radius: 1em;
     background-color: hsla(30, 12%, 97%, 0.514);
 }
 
 header {
-    padding: 5%;
-    height: 35%;
+    padding: 2em;
+    height: 25%;
     border: 1px solid #0f0f0f;
     border-radius: 1em;
     background-color: hsla(30, 12%, 97%, 0.514);
 }
 
 #picture {
+    width: 150px;
     z-index: 3;
     float: right;
     box-shadow: 10px 5px 5px #37393a36;
