@@ -23,6 +23,11 @@ footer {
     background-color: #394968;
 }
 
+h4 {
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 #picture {
     width: 150px;
     z-index: 3;
@@ -54,6 +59,10 @@ a:visited {
 
 a:hover {
     color: red;
+}
+
+#date {
+    color: tomato;
 }
 
 footer {

@@ -15,7 +15,7 @@
 
     <header>
         <img id="picture" src="/images/portrait.jpg" alt=" Student portrait" />
-        <h2>Carlos Daniel Gerez Garcia</h2>
+        <h2>Carlos Daniel Gerez Garcia </h2>
 
     </header>
 
@@ -43,12 +43,11 @@
             </ul>
     </main>
     <footer>
-        <p>&copy; 2020 | Carlos Gerez | Norway |<a href="https://www.byui.edu/online" target="_blanK">BYU Online
+        <p>&copy; <span id="year"></span> | Carlos Gerez | Norway |<a href="https://www.byui.edu/online" target="_blanK">BYU Online
                 Learning</a></p>
-        <p>Last Updated: <span id="update"></span></p>
+        <p id="date">Last Updated: <span id="update"></span></p>
     </footer>
-    <script>
-        document.getElementById("update").textContent = document.lastModified;
+    <script src="js/date.js">
     </script>
 
 
