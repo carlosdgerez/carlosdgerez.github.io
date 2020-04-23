@@ -28,10 +28,17 @@ h4 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+h2 {
+    position: relative;
+    z-index: 2;
+}
+
 #picture {
+    position: relative;
     width: 150px;
     float: right;
     box-shadow: 10px 5px 5px #37393a36;
+    top: -3.5em;
 }
 
 hr {
@@ -61,7 +68,7 @@ a:hover {
 }
 
 #date {
-    color: rgb(253, 237, 6);
+    color: rgb(250, 132, 36);
     font-weight: bold;
 }
 
