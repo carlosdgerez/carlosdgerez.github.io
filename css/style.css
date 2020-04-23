@@ -20,7 +20,7 @@ header {
 
 header,
 footer {
-    background-color: #394968;
+    background-color: #7899db;
 }
 
 h4 {
@@ -62,7 +62,8 @@ a:hover {
 }
 
 #date {
-    color: tomato;
+    color: rgb(253, 237, 6);
+    font-weight: bold;
 }
 
 footer {
