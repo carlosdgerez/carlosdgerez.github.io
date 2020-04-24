@@ -33,7 +33,7 @@ h2 {
     z-index: 2;
 }
 
-#picture {
+img {
     position: relative;
     width: 150px;
     float: right;
@@ -79,4 +79,17 @@ footer {
     height: 35%;
     border: 1px solid #0f0f0f;
     border-radius: 1em;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 340px;
+    }
+    h2 {
+        text-align: center;
+        color: rgb(72, 168, 96);
+    }
+    footer {
+        height: 45%;
+    }
 }
