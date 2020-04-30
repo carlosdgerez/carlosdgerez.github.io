@@ -98,7 +98,7 @@ footer {
 
 @media screen and (max-width: 480px) {
     body {
-        width: 340px;
+        width: 380px;
     }
     h2 {
         text-align: center;
