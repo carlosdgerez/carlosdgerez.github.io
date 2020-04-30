@@ -23,6 +23,10 @@ footer {
     background-color: #8dc8db;
 }
 
+main {
+    margin-top: 150px;
+}
+
 h4 {
     font-size: x-large;
 }
