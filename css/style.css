@@ -25,13 +25,13 @@ footer {
 
 h4 {
     font-size: x-large;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h2 {
     position: relative;
     z-index: 2;
     margin: 0%;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 240%;
 }
 
@@ -48,6 +48,10 @@ hr {
     width: 100%;
     text-align: left;
     margin-left: 0;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
 }
 
 h2,
