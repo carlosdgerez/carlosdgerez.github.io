@@ -38,7 +38,6 @@ h2 {
 img {
     position: relative;
     width: 150px;
-    float: right;
     box-shadow: 10px 5px 5px #37393a36;
     border-radius: 0.4em;
     top: -3.5em;
@@ -98,7 +97,7 @@ footer {
 
 @media screen and (max-width: 480px) {
     body {
-        width: 380px;
+        width: 375px;
     }
     h2 {
         text-align: center;
