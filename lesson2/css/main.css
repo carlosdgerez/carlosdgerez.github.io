@@ -1,21 +1,44 @@
 body {
-    font-family: 'Raleway', sans-serif;
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px;
     justify-content: center;
     text-align: center;
+    grid-gap: 5px;
 }
 
 img {
-    width: 93%;
+    width: 80%;
+    border: 1px solid #0f0f0f;
 }
 
-h1,
+a,
 h2,
 h3 {
     padding: 1em;
     font-size: 16px;
+}
+
+.title {
+    background-color: skyblue;
+    justify-content: right;
+    font-size: 10px;
+}
+
+section {
+    border: 1px solid #0f0f0f;
+    border-radius: 1em;
+}
+
+h2 {
+    text-align: left;
+    color: rgb(7, 7, 7);
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 3px 3px rgb(228, 235, 232);
+}
+
+h3 {
+    background-color: slategrey;
 }
