@@ -1,5 +1,5 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -17,7 +17,7 @@ a,
 h2,
 h3 {
     padding: 1em;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .title {
