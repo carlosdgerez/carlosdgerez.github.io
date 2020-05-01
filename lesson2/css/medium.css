@@ -2,7 +2,6 @@
         body {
             grid-template-columns: 1fr 1fr;
         }
-        footer,
         .title {
             grid-column: span 2;
         }
