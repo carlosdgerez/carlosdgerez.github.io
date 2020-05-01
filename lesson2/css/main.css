@@ -1,4 +1,21 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px;
+    justify-content: center;
+    text-align: center;
+}
+
+img {
+    width: 93%;
+}
+
+h1,
+h2,
+h3 {
+    padding: 1em;
+    font-size: 16px;
 }
