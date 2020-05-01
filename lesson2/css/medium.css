@@ -1,8 +1,8 @@
-@media only screen and (min-width: 37.5em) {
-    body {
-        grid-template-columns: 1fr 1fr;
+    @media only screen and (min-width: 37.5em) {
+        body {
+            grid-template-columns: 1fr 1fr;
+        }
+        .title {
+            grid-column: span 2;
+        }
     }
-    .title {
-        column-span: 2;
-    }
-}
