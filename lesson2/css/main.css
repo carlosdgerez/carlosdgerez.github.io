@@ -1,16 +1,45 @@
-body {
+main {
     font-family: 'Hind Siliguri', sans-serif;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
     justify-content: center;
     text-align: center;
-    grid-gap: 5px;
+    grid-gap: 10px;
+}
+
+main {
+    grid-template-areas: "one" "two" "three";
+}
+
+header {
+    display: block;
+    text-align: center;
+    margin-bottom: 16px;
+    background-color: skyblue;
+    font-size: 18px;
+}
+
+main section:nth-child(1) {
+    grid-area: one;
+}
+
+main section:nth-child(2) {
+    grid-area: two;
+}
+
+main section:nth-child(3) {
+    grid-area: three;
 }
 
 img {
     width: 80%;
     border: 1px solid #0f0f0f;
+}
+
+body {
+    margin: 30px;
 }
 
 a,
@@ -20,16 +49,7 @@ h3 {
     font-size: 20px;
 }
 
-.title {
-    background-color: skyblue;
-    justify-content: right;
-    font-size: 10px;
-}
-
-section {
-    border: 1px solid #0f0f0f;
-    border-radius: 1em;
-}
+header {}
 
 h2 {
     text-align: left;
@@ -41,4 +61,23 @@ h2 {
 
 h3 {
     background-color: rgb(82, 127, 172);
+}
+
+footer {
+    justify-self: center;
+    background-color: skyblue;
+    text-align: center;
+    margin-top: 16px;
+}
+
+header,
+footer {
+    border: 1px solid #0f0f0f;
+    border-radius: 1em;
+}
+
+section {
+    box-shadow: 10px 10px 5px grey;
+    border: 3px solid #0f0f0f;
+    border-radius: 2em;
 }

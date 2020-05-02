@@ -1,8 +1,8 @@
     @media only screen and (min-width: 37.5em) {
-        body {
+        main {
             grid-template-columns: 1fr 1fr;
         }
-        .title {
-            grid-column: span 2;
+        main {
+            grid-template-areas: "one two" "three three";
         }
     }
