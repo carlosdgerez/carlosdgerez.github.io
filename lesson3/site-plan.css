@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family= Arvo|Aclonica|Sans-serif');
  :root {
     /* change the values below to your colors from your palette */
-    --primary-color: #f6dc26ff;
-    --secondary-color: #74e3edff;
-    --accent1-color: #ee7465ff;
-    --accent2-color: #1b6e8bff;
+    --primary-color: #96c0ea;
+    --secondary-color: #ee7465ff;
+    --accent1-color: #1b6e8bff;
+    --accent2-color: #f6dc26ff;
     /* change the values below to your chosen font(s) */
-    --heading-font: "Aclonica";
-    --paragraph-font: "Arvo";
+    --heading-font: "Nunito";
+    --paragraph-font: "Ubuntu";
     /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white: #f6dc26ff;
+    --headline-color-on-white: black;
     /* headlines on a white background */
-    --headline-color-on-color: lightgrey;
+    --headline-color-on-color: black;
     /* headlines on a colored background */
-    --paragraph-color-on-white: #ee7465ff;
+    --paragraph-color-on-white: black;
     /* paragraph text on a white background */
-    --paragraph-color-on-color: #1b6e8bff;
+    --paragraph-color-on-color: black;
     /* paragraph text on a colored background */
-    --text-background-color: white;
+    --text-background-color: #96c0ea;
     --nav-link-color: #ee7465ff;
-    --nav-background-color: #74e3edff;
-    --nav-hover-link-color: white;
-    --nav-hover-background-color: #f6dc26ff;
+    --nav-background-color: #1b6e8bff;
+    --nav-hover-link-color: #f6dc26ff;
+    --nav-hover-background-color: #ee7465ff;
 }
 
 
@@ -29,19 +29,18 @@
 
 header,
 footer {
-    background-color: #e3edff;
-    ;
+    background-color: #1b6e8bff;
+    padding: 5px;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
 }
 
 nav {
     background-color: #36454f;
-    text-align: center;
     box-shadow: 0 2px 15px gray;
+    display: block;
 }
 
 nav ul {
@@ -53,8 +52,7 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color: #fff;
-    text-align: center;
+    color: #ee7465ff;
     padding: 0.75rem;
     text-decoration: none;
     font-size: 0.95rem;
@@ -72,6 +70,7 @@ nav a:hover {
 footer {
     flex: 0 1 100%;
     height: 2rem;
+    box-shadow: 0 2px 15px gray;
 }
 
 html {
@@ -83,6 +82,7 @@ body {
     margin: 0 auto;
     background-color: white;
     padding: 1em;
+    box-shadow: 0 2px 15px gray;
 }
 
 img {
@@ -101,7 +101,6 @@ h6 {
 
 header {
     padding: 1em;
-    text-align: center;
     color: var(--paragraph-color-on-color);
     background-color: var(--text-background-color);
 }
@@ -109,6 +108,7 @@ header {
 header>h1,
 header>h2 {
     color: var(--headline-color-on-color);
+    background-color: transparent;
 }
 
 p {
@@ -117,11 +117,21 @@ p {
     padding: 1em;
 }
 
+hr {
+    border: 1px solid red;
+}
+
 .colors {
     width: 100%;
     min-width: 350px;
     margin: auto;
     text-align: center;
+}
+
+.imgpersona {
+    justify-self: right;
+    float: right;
+    box-shadow: 0 2px 15px gray;
 }
 
 .colors th {
@@ -163,7 +173,6 @@ nav {
 
 nav>ul {
     list-style-type: none;
-    display: flex;
 }
 
 nav a {
