@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family= Arvo|Aclonica|Sans-serif');
+
+/*root element declare global variables*/
+
  :root {
     /* change the values below to your colors from your palette */
     --primary-color: #96c0ea;
