@@ -12,7 +12,7 @@
     <link type="text/css" rel="stylesheet" href="css\style1.css">
 </head>
 
-<body>
+<body onload="renderDate()">
     <header><img src="images\icon2.png" alt="logo">
         <section section="headings">
             <h1>Weather M Site</h1>
@@ -21,7 +21,7 @@
     </header>
     <nav>
         <ul class="navigation">
-            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
             <li><a href="">Home</a></li>
             <li><a href="">Preston</a></li>
             <li><a href="">Soda Springs</a></li>
@@ -35,19 +35,21 @@
 
     <main>
 
-        <h2>Presto Idaho</h2>
-        <div>
-            Hero W/ Weather Summary
-        </div>
-        <div>
-            5 Day Forecast
-        </div>
-        <div>
-            Article
-        </div>
-        <div>
-            Contact Information
-        </div>
+        <h2 class="title">Presto Idaho</h2>
+        <section class="midle">
+            <div>
+                Hero W/ Weather Summary
+            </div>
+            <div>
+                5 Day Forecast
+            </div>
+            <div>
+                Article
+            </div>
+            <div>
+                Contact Information
+            </div>
+        </section>
 
 
 
@@ -63,7 +65,7 @@
 
     </main>
     <footer>
-        <h4>&copy; 2020 Carlos Gerez
+        <h4 id="date">
             <a href="https://www.byui.edu/">BYUI</a>
         </h4>
     </footer>
