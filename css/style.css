@@ -3,6 +3,7 @@ header,
 footer {
     margin: 0 auto;
     max-width: 650px;
+    overflow-x: hidden;
 }
 
 body {
