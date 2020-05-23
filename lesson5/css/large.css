@@ -5,4 +5,14 @@
     .img-center {
         width: 35%;
     }
+    .banner {
+        top: 20%;
+        right: 300%px;
+    }
+    .mapsmall {
+        display: none;
+    }
+    .maplarge {
+        display: block;
+    }
 }

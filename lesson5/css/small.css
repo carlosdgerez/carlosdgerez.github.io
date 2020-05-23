@@ -78,6 +78,7 @@ nav {
     padding: 0.75rem;
     text-align: center;
     text-decoration: none;
+    white-space: nowrap;
     color: black;
     font-weight: 700;
     font-size: 20px;
@@ -113,8 +114,8 @@ nav ul li.active a {
     color: white;
     font-size: 1.8vw;
     font-weight: 900;
-    top: 70px;
-    right: 140px;
+    top: 35%;
+    right: 80%px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
     background-color: #ff7465ff;
     opacity: 0.8;
@@ -134,8 +135,13 @@ hr {
     margin: 0 auto;
 }
 
+.forecast {
+    text-align: center;
+    display: none;
+}
+
 .flex,
-.map {
+.headingmap {
     display: none;
 }
 
@@ -143,13 +149,13 @@ hr {
     width: 100%;
 }
 
+.imgicon {
+    margin: 0 auto;
+}
+
 .midle div {
-    margin: 10px auto;
-    border: dashed;
-    border-color: red;
-    border-width: 1px;
+    margin: 0px auto;
     padding: 12px;
-    background-color: rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -160,6 +166,20 @@ footer {
     font-size: 0.8em;
     background-color: #ee7465ff;
     padding: 0.1rem;
+}
+
+.contact {
+    text-align: center;
+    margin: 0 auto;
+}
+
+h5,
+h3 {
+    margin: 0 auto;
+}
+
+.contacticons {
+    width: 30%;
 }
 
 #final {
@@ -189,4 +209,25 @@ footer {
 
 .responsive li {
     display: block;
+}
+
+.articlebody {
+    padding: 10px;
+}
+
+.img-center {
+    margin: 5px;
+    box-shadow: 10px 18px 16px 4px rgba(0, 0, 0, 0.4);
+}
+
+.contact {
+    line-height: 2.3;
+}
+
+.contain {
+    background-color: #96c0ea;
+}
+
+.firstline {
+    padding-top: 10px;
 }
