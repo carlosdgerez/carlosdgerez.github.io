@@ -12,10 +12,59 @@
     .navigation li:first-child {
         display: none;
     }
+    .flex {
+        display: flex;
+        flex-flow: row wrap;
+        width: 60%;
+    }
+    .flex-col {
+        width: 10%;
+        flex: 1 1 auto;
+        background-color: #bed;
+    }
+    .flex-col,
+    .column-col {
+        border-bottom: 1px solid #333;
+        border-left: 1px solid #333;
+        text-align: center;
+    }
+    .data {
+        display: block;
+        padding: 0 5px 5px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .col-head {
+        font-weight: 700;
+        font-size: 1rem;
+        background-color: black;
+        color: white;
+    }
+    .col-head {
+        display: block;
+        padding: 5px;
+        border-bottom: 1px solid #333;
+        text-align: center;
+    }
+    .img-col {
+        border-radius: 100px;
+        padding: 0.25rem;
+    }
+    .flex {
+        border-right: 1px solid #333;
+    }
     .midle {
         max-width: 75%;
     }
     header img {
         width: 16%;
+    }
+    .article {
+        line-height: 2.15;
+        padding: 20px;
+    }
+    .img-center {
+        width: 40%;
+        float: right;
     }
 }

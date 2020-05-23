@@ -1,3 +1,9 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 header {
     padding: 5px 0;
     display: flex;
@@ -91,13 +97,54 @@ nav ul li.active a {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+.main_img {
+    position: relative;
+}
+
+.home_img {
+    width: 100%;
+}
+
+.banner {
+    position: absolute;
+    width: 30%;
+    height: 65%;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 1.8vw;
+    font-weight: 900;
+    top: 70px;
+    right: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+    background-color: #ff7465ff;
+    opacity: 0.8;
+    padding: 15px;
+}
+
+.info {
+    color: #f6dc26ff;
+}
+
+hr {
+    width: 100%;
+}
+
 .midle {
     display: block;
     margin: 0 auto;
 }
 
+.flex,
+.map {
+    display: none;
+}
+
+.img-center {
+    width: 100%;
+}
+
 .midle div {
-    margin: 15px auto;
+    margin: 10px auto;
     border: dashed;
     border-color: red;
     border-width: 1px;
@@ -121,11 +168,6 @@ footer {
     font-weight: 700;
 }
 
-#map {
-    width: 100%;
-    height: 100%;
-}
-
 .message {
     display: none;
 }
@@ -136,6 +178,10 @@ footer {
     color: black;
     text-align: center;
     padding: 0.1rem;
+}
+
+.articlebody {
+    padding: 20px;
 }
 
 
