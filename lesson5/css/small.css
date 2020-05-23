@@ -143,6 +143,7 @@ hr {
 .flex,
 .headingmap {
     display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
 }
 
 .img-center {
@@ -226,6 +227,7 @@ h3 {
 
 .contain {
     background-color: #96c0ea;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
 }
 
 .firstline {
