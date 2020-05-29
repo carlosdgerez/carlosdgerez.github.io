@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7ou1AMFECssspuFiBBzoSD8VWs63Cf7w&callback=initMap">
     </script>
+    <script src="js/fonts.js"></script>
+
     <script src="js/windChill.js"></script>
     <script src="js/responsive.js"></script>
     <link type="text/css" rel="stylesheet" href="css/small.css">
@@ -19,7 +21,7 @@
     <link type="text/css" rel="stylesheet" href="css/large.css">
 </head>
 
-<body onload="renderDate(); windChills();">
+<body onload="renderDate(); windChills(); loadFonts();">
     <div id="top">
         <div class="message">
             <h3>Saturday = Preston Pancakes in the Park!</h3>
@@ -147,13 +149,9 @@
             <a id="final" href="https://www.byui.edu/">BYUI</a></h4>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-        WebFont.load({
-            google: {
-                families: ['Roboto']
-            }
-        });
-    </script>
+
+
+
 
 </body>
 
