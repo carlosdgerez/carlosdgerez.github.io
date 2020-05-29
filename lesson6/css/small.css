@@ -238,3 +238,9 @@ h3 {
 .firstline {
     padding-top: 10px;
 }
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
