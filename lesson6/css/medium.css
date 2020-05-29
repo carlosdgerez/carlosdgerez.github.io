@@ -81,6 +81,9 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
         }
+        .headingmap {
+            background-color: transparent;
+        }
         .contacticons {
             margin: 0 auto;
             padding: 0;
