@@ -10,5 +10,6 @@ picture img[data-src] {
 
 picture img {
     filter: blur(0em);
-    transition: filter 0.5s;
+    transition: filter 2.9s;
+    border: 3px solid cornflowerblue;
 }
