@@ -1,0 +1,22 @@
+@media only screen and (min-width: 60em) {
+    header img {
+        width: 10%;
+    }
+    .img-center {
+        width: 35%;
+    }
+    .banner {
+        top: 20%;
+        right: 60%;
+    }
+    .mapsmall {
+        display: none;
+    }
+    .maplarge {
+        display: none;
+    }
+    #grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "one two three" "four five six" "seven eight nine";
+    }
+}
