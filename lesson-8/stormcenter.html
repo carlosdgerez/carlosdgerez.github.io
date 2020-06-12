@@ -58,47 +58,71 @@
         <h2 class="title">Storm Center</h2>
         <form method="get" action="thanks.html">
             <fieldset>
-                <legend>Applicant Information</legend>
-                <label class="top">First Name*<input type="text" name="fname" required></label>
-                <label class="top">Last Name*<input type="text" name="fname" required></label>
-                <label class="top">Phone<input type="tel" name="phone" placeholder="111111111111"></label>
-                <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label class="top">Website<input type="url" name="url" placeholder="http://"></label>
+                <legend>Personal Information</legend>
+                <label class="top">Full Name *<input type="text" name="fname" pattern="[a-zA-Z][a-zA-Z ]{4,}"
+                        required></label>
+                <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+
+                <label class="top">Zip Code<input type="number" name="zip" required></label>
+
             </fieldset>
 
             <fieldset>
-                <legend>Course Information</legend>
-                <div>Audience</div>
-                <label class="sbs"><input type="radio" name="audience" value="beginner">Beginner</label>
-                <label class="sbs"><input type="radio" name="audience" value="intermediate">Beginner</label>
-                <label class="sbs"><input type="radio" name="audience" value="advanced">Beginner</label>
+                <legend>Storm Report</legend>
+                <label class="top">Storm Date<input type="date" name="date" required></label>
+                <label class="top">Storm Type<input list="storms" name="storm" ></label>
+                <datalist id="storms">
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option>
+                </datalist>
+                <label id="levels">Storm Severity (0 to 10)<span id="severity">5</span>
+                    <input id="value" type="range" list="level" name="severity" onchange="setValue()" min="1" max="10"
+                        step="1" value="5"></label>
+                <datalist id="level">
+                    <option value="0" label="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5" label="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10" label="10"></option>
+                </datalist>
+                <label class="top">Storm Region
+                    <select name="region">
+                        <option value="">--Please Select a Region-- &#9662;</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda springs">Soda Springs</option>
+                        <option value="fish haven">Fish Haven</option>
 
-                <div>Software Needed</div>
-                <label class="sbs"><input type="checkbox" name="editing" value="yes">Photo Editing</label>
-                <label class="sbs"><input type="checkbox" name="code" value="yes">Coding</label>
-                <label class="sbs"><input type="checkbox" name="process" value="yes">Preprocessor</label>
-                <label class="sbs"><input type="checkbox" name="client" value="yes">FTP Client</label>
+                    </select>
+                </label>
+
+
+
+                <label class="top">User in Danger Level</label>
+                <label class="sbs"><input type="radio" name="danger" value="yes">Yes</label>
+                <label class="sbs"><input type="radio" name="danger" value="maybe">Maybe</label>
+                <label class="sbs"><input type="radio" name="danger" value="not">Not</label>
+
+
             </fieldset>
 
             <fieldset>
-                <legend class="top">Funding</legend>
+                <legend class="top">Aditional Information or Comments</legend>
+                <textarea name="information" rows="4" cols="50"></textarea>
 
-                <label class="top"> Anticipated Completion Date<input type="date" name="completeDate" </label> <label>Course
-             Subject
-             <select name="subject">
-                 <option value="">Please Select &#9662;</option>
-                 <option value="software">Software Development</option>
-                 <option value="creative">Creative Profesional</option>
-                 <option value="info">Information Technology</option>
-                 <option value="data">Data Profesional</option>
-                 <option value="construction">Construction</option>
-                 <option value="bussines">Bussines Professional</option>
-             </select>
-         </label>
+                </label>
 
-                <label class="top">How Many Authors<input type="number" name="authors"> </label>
+
             </fieldset>
-            <input type="submit" value="Propose My Course" class="submitBtn">
+            <input type="submit" value="Send Report" class="submitBtn">
 
         </form>
 

@@ -11,6 +11,10 @@ body {
     overflow-x: hidden;
 }
 
+#thanks {
+    font-size: 3rem;
+}
+
 
 /*----------- apply a natural box layout model to all elements --------------*/
 
@@ -182,7 +186,7 @@ form div {
     display: block;
     padding-top: 1rem;
     color: #9c2c13;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 form label.top input,
@@ -203,6 +207,19 @@ form label.sbs {
     display: block;
     padding: .75rem;
     color: #555;
+}
+
+#severity {
+    color: #9c2c13;
+}
+
+#levels {
+    display: flex;
+    flex-direction: column;
+    color: brown;
+    padding: .75rem;
+    width: 100%;
+    max-width: 20rem;
 }
 
 form input.submitBtn {

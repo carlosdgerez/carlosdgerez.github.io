@@ -29,3 +29,8 @@ function getMessage(day) {
         document.getElementsByClassName("message")[0].classList.toggle("fridaymessage");
     }
 }
+
+function setValue() {
+    var message = document.getElementById("value").value;
+    document.getElementById("severity").innerHTML = message;
+}
