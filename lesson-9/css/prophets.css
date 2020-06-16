@@ -10,11 +10,12 @@
             
             .cards {
                 display: grid;
-                grid-gap: 5px;
                 grid-template-columns: 1fr;
                 justify-content: center;
                 background-color: lightgrey;
+                border-radius: 10px;
                 box-shadow: 5px -5px 37px 20px #888888;
+                padding: 15px;
             }
             
             img {
@@ -27,6 +28,7 @@
                 text-align: center;
                 padding-bottom: 20px;
                 border: 1px solid black;
+                margin: 2px;
             }
             
             h1,

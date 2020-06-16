@@ -22,11 +22,14 @@ function loadProphets() {
                 image.setAttribute('alt', prophets[i].name + prophets[i].lastname + "-" + prophets[i].order);
                 h3.textContent = "Date of Birth: " + prophets[i].birthdate;
                 h3b.textContent = "Place of Birth: " + prophets[i].birthplace;
-                // Add content to the card and st it in div 
+
+
+                // Add content to the card and set it in div 
                 card.appendChild(h2);
                 card.appendChild(h3);
                 card.appendChild(h3b);
                 card.appendChild(image);
+
                 document.querySelector('div.cards').appendChild(card);
 
 
