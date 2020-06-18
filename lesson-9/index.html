@@ -10,7 +10,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Nunito%7cUbuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7ou1AMFECssspuFiBBzoSD8VWs63Cf7w&callback=initMap">
+
     </script>
     <script src="js/fonts.js"></script>
 
@@ -21,7 +21,7 @@
     <link type="text/css" rel="stylesheet" href="css/large.css">
 </head>
 
-<body onload="renderDate(); loadFonts();">
+<body onload="renderDate(); loadTowns(); loadFonts();">
     <div id="top">
         <div class="message">
             <h3>Saturday = Preston Pancakes in the Park!</h3>
@@ -49,7 +49,8 @@
     </div>
     <main>
 
-        <h2 class="title">Preston Idaho</h2>
+
+        <div class="cards"></div>
         <section class="midle">
             <div class="grid clearfix">
                 <div class="headingmap">

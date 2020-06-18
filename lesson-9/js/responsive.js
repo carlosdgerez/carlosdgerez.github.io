@@ -38,6 +38,19 @@ function loadTowns() {
         })
         .then(function(jsonObject) {
             console.table(jsonObject); /*temporary checking for valid response and data parsing*/
+            const towns = jsonObject['towns'];
+            const preston = towns.filter(town => (town.name == 'Preston'));
+            console.table(preston);
+            const fishhaven = towns.filter(town => (town.name == 'Fish Haven'));
+            console.table(fishhaven);
+            const sodasprings = towns.filter(town => (town.name == 'Soda Springs'));
+            console.table(sodasprings);
+
+            addTown(preston);
+            addTown(fishhaven);
+            addTown(sodasprings);
+            console.table(fishhaven[0].name);
+
             /*   const prophets = jsonObject['prophets'];
                for (let i = 0; i < prophets.length; i++) {
 
@@ -68,4 +81,37 @@ function loadTowns() {
                }*/
 
         });
+}
+
+function addTown(town) {
+    console.table(town);
+    /* create elements to show */
+    let card = document.createElement('section');
+    let h1 = document.createElement('h1')
+    let p = document.createElement('p');
+    let h2 = document.createElement('h2');
+    let h3 = document.createElement('h3')
+    let h3b = document.createElement('h3')
+    let image = document.createElement('img');
+
+    h1.innerHTML = `${town[0].name}`;
+    p.innerHTML = `${town[0].motto}`;
+    h2.innerHTML = `Founded in :${town[0].yearFounded}`;
+    h3.innerHTML = `Current Population: ${town[0].currentPopulation}`;
+    h3b.innerHTML = `Average Rainfall: ${town[0].averageRainfall}`;
+
+    image.setAttribute('src', `images/${town[0].photo}`);
+    image.setAttribute('alt', `Picture of the city of  ${town[0].name}`);
+
+
+    /*Add content to the card and set it in div */
+    card.appendChild(h1);
+    card.appendChild(h2);
+    card.appendChild(p);
+    card.appendChild(h3);
+    card.appendChild(h3b);
+    card.appendChild(image);
+
+    document.querySelector('div.cards').appendChild(card);
+
 }
