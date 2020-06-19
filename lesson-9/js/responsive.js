@@ -50,36 +50,6 @@ function loadTowns() {
             addTown(fishhaven);
             addTown(sodasprings);
             console.table(fishhaven[0].name);
-
-            /*   const prophets = jsonObject['prophets'];
-               for (let i = 0; i < prophets.length; i++) {
-
-                   // create elements to show
-                   let card = document.createElement('section');
-                   let h2 = document.createElement('h2');
-                   let h3 = document.createElement('h3')
-                   let h3b = document.createElement('h3')
-                   let image = document.createElement('img');
-
-                   // Add content to the elements
-                   h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-                   image.setAttribute('src', prophets[i].imageurl);
-                   image.setAttribute('alt', prophets[i].name + prophets[i].lastname + "-" + prophets[i].order);
-                   h3.textContent = "Date of Birth: " + prophets[i].birthdate;
-                   h3b.textContent = "Place of Birth: " + prophets[i].birthplace;
-
-
-                   // Add content to the card and set it in div 
-                   card.appendChild(h2);
-                   card.appendChild(h3);
-                   card.appendChild(h3b);
-                   card.appendChild(image);
-
-                   document.querySelector('div.cards').appendChild(card);
-
-
-               }*/
-
         });
 }
 
@@ -87,6 +57,7 @@ function addTown(town) {
     console.table(town);
     /* create elements to show */
     let card = document.createElement('section');
+    let div = document.createElement('div');
     let h1 = document.createElement('h1')
     let p = document.createElement('p');
     let h2 = document.createElement('h2');
@@ -94,7 +65,7 @@ function addTown(town) {
     let h3b = document.createElement('h3')
     let image = document.createElement('img');
 
-    h1.innerHTML = `${town[0].name}`;
+    h1.innerHTML = `<strong>${town[0].name}</strong>`;
     p.innerHTML = `${town[0].motto}`;
     h2.innerHTML = `Founded in :${town[0].yearFounded}`;
     h3.innerHTML = `Current Population: ${town[0].currentPopulation}`;
@@ -102,14 +73,24 @@ function addTown(town) {
 
     image.setAttribute('src', `images/${town[0].photo}`);
     image.setAttribute('alt', `Picture of the city of  ${town[0].name}`);
+    image.setAttribute('id', 'hometown');
+    h1.setAttribute('class', 'data');
+    p.setAttribute('class', 'data');
+    h2.setAttribute('class', 'data');
+    h3.setAttribute('class', 'data');
+    h3b.setAttribute('class', 'data');
+
+    div.setAttribute('class', 'information');
 
 
     /*Add content to the card and set it in div */
-    card.appendChild(h1);
-    card.appendChild(h2);
-    card.appendChild(p);
-    card.appendChild(h3);
-    card.appendChild(h3b);
+
+    div.appendChild(h1);
+    div.appendChild(h2);
+    div.appendChild(p);
+    div.appendChild(h3);
+    div.appendChild(h3b);
+    card.appendChild(div);
     card.appendChild(image);
 
     document.querySelector('div.cards').appendChild(card);

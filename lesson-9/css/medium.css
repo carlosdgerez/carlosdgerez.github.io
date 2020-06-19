@@ -104,4 +104,18 @@
         .forecast {
             display: block;
         }
+        .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        section:nth-child(odd) img {
+            grid-column: 2;
+        }
+        section:nth-child(odd) .information {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        .cards {
+            max-width: 117%;
+        }
     }

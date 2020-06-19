@@ -247,3 +247,15 @@ h3 {
     display: table;
     clear: both;
 }
+
+.cards {
+    display: block;
+    margin: 18px 0px 5px 0px;
+    text-align: center;
+    padding: 5px;
+    background-color: #ee7465ff;
+}
+
+#hometown {
+    width: 90%;
+}
