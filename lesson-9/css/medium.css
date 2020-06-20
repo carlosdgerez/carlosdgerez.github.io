@@ -129,4 +129,9 @@
             grid-template-rows: auto;
             grid-template-areas: "prestoninfo preston" "fishhaven fishhaveninfo" "sodaspringinfo sodaspring";
         }
+        section .information h1,
+        p,
+        h2 {
+            font-size: 2rem;
+        }
     }
