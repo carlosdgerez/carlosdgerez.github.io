@@ -258,3 +258,15 @@ h3 {
 #hometown {
     width: 90%;
 }
+
+#todaystory {
+    padding: 40px;
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+    color: brown;
+}
+
+.cards section {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+}

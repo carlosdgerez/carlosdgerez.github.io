@@ -16,7 +16,7 @@
             display: block;
         }
         #hometown {
-            width: 70%;
+            width: 75%;
         }
         .cards {
             display: grid;
@@ -25,5 +25,6 @@
         }
         section {
             display: block;
+            margin: 20px;
         }
     }
