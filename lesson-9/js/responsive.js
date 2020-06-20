@@ -37,24 +37,24 @@ function loadTowns() {
             return response.json();
         })
         .then(function(jsonObject) {
-            console.table(jsonObject); /*temporary checking for valid response and data parsing*/
+
             const towns = jsonObject['towns'];
             const preston = towns.filter(town => (town.name == 'Preston'));
-            console.table(preston);
+
             const fishhaven = towns.filter(town => (town.name == 'Fish Haven'));
-            console.table(fishhaven);
+
             const sodasprings = towns.filter(town => (town.name == 'Soda Springs'));
             console.table(sodasprings);
 
             addTown(preston);
             addTown(fishhaven);
             addTown(sodasprings);
-            console.table(fishhaven[0].name);
+
         });
 }
 
 function addTown(town) {
-    console.table(town);
+
     /* create elements to show */
     let card = document.createElement('section');
     let div = document.createElement('div');
