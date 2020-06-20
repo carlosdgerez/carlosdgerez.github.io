@@ -104,18 +104,29 @@
         .forecast {
             display: block;
         }
-        .cards {
+        section:nth-child(1) img {
+            grid-area: preston;
+        }
+        section:nth-child(2) img {
+            grid-area: fishhaven;
+        }
+        section:nth-child(3) img {
+            grid-area: sodaspring;
+        }
+        section:nth-child(1) .information {
+            grid-area: prestoninfo;
+        }
+        section:nth-child(2) .information {
+            grid-area: fishhaveninfo;
+        }
+        section:nth-child(3) .information {
+            grid-area: sodaspringinfo;
+        }
+        section {
             display: grid;
             grid-template-columns: 1fr 1fr;
-        }
-        section:nth-child(odd) img {
-            grid-column: 2;
-        }
-        section:nth-child(odd) .information {
-            grid-column: 1;
-            grid-row: 1;
-        }
-        .cards {
             max-width: 117%;
+            grid-template-rows: auto;
+            grid-template-areas: "prestoninfo preston" "fishhaven fishhaveninfo" "sodaspringinfo sodaspring";
         }
     }
