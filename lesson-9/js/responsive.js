@@ -17,6 +17,7 @@ function renderDate() {
 
 
     getMessage(day);
+    
 
 }
 
