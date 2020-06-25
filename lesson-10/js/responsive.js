@@ -19,7 +19,7 @@ function renderDate() {
     getMessage(day);
 
 }
-
+/*
 function renderMap() {
     var location = {
         lat: 42.0963,
@@ -35,7 +35,7 @@ function renderMap() {
     });
 
 
-}
+}*/
 
 function getMessage(day) {
     if (day == "Friday") {

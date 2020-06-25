@@ -233,3 +233,7 @@ h3 {
 .firstline {
     padding-top: 10px;
 }
+
+div span.data {
+    font-size: 1.4rem;
+}

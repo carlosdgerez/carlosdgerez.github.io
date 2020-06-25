@@ -31,13 +31,22 @@ function apiCall() {
             const fivedayforecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
             console.log(fivedayforecast);
 
+            const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+            let day = 0;
+            let imagesrc = "";
+            let desc = "";
+            fivedayforecast.forEach(forecast => {
+                let d = new Date(forecast.dt_txt);
+                document.getElementById(`temp${day+1}`).textContent = forecast.main.temp + " F";
+                document.getElementById(`day${day+1}`).textContent = weekdays[d.getDay()];
+                desc = forecast.weather[0].description;
+                imagesrc = 'https://openweathermap.org/img/w/' + forecast.weather[0].icon + '.png';
+                document.getElementById(`icon${day+1}`).setAttribute('src', imagesrc);
+                document.getElementById(`icon${day+1}`).setAttribute('alt', desc);
+                day++;
+            });
 
 
-            /*const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; // note the concatenation
-            const desc = jsObject.weather[0].description; // note how we reference the weather array
-            document.getElementById('imagesrc').textContent = imagesrc; // informational specification only
-            document.getElementById('icon').setAttribute('src', imagesrc); // focus on the setAttribute() method
-            document.getElementById('icon').setAttribute('alt', desc); */
 
 
         });
