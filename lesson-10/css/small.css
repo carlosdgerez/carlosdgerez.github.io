@@ -237,3 +237,9 @@ h3 {
 div span.data {
     font-size: 1.4rem;
 }
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
