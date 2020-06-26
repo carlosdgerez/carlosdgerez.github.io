@@ -19,7 +19,7 @@ function apiCall() {
 
         });
 
-    const apiURLF = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=426ea6dd30efaa6a3321c678df5eef94&units=imperial"
+    const apiURLF = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=426ea6dd30efaa6a3321c678df5eef94&units=imperial"
 
 
 
