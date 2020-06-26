@@ -6,30 +6,30 @@ function apiCall() {
     fetch(apiURL)
         .then((response) => response.json())
         .then((jsObject) => {
-            console.log(jsObject);
+
             const currentWeather = document.querySelector('#current');
             const currentTemp = document.querySelector('#temp');
             const humidity = document.querySelector('#humidity');
             const wind = document.querySelector('#wind');
 
             currentWeather.textContent = jsObject.weather[0].description;
-            currentTemp.textContent = jsObject.main.temp;
-            humidity.textContent = jsObject.main.humidity;
-            wind.textContent = jsObject.wind.speed;
+            currentTemp.textContent = jsObject.main.temp.toFixed(0);
+            humidity.textContent = jsObject.main.humidity.toFixed(0);
+            wind.textContent = jsObject.wind.speed.toFixed(0);
 
         });
 
-    const apiURLF = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=426ea6dd30efaa6a3321c678df5eef94&units=imperial"
+    const apiURLF = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=426ea6dd30efaa6a3321c678df5eef94&units=imperial"
 
 
 
     fetch(apiURLF)
         .then((response) => response.json())
         .then((jsObject) => {
-            console.log(jsObject);
+
 
             const fivedayforecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
-            console.log(fivedayforecast);
+
 
             const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
             let day = 0;
@@ -37,7 +37,7 @@ function apiCall() {
             let desc = "";
             fivedayforecast.forEach(forecast => {
                 let d = new Date(forecast.dt_txt);
-                document.getElementById(`temp${day+1}`).textContent = forecast.main.temp + " F";
+                document.getElementById(`temp${day+1}`).textContent = forecast.main.temp.toFixed(0) + "° F";
                 document.getElementById(`day${day+1}`).textContent = weekdays[d.getDay()];
                 desc = forecast.weather[0].description;
                 imagesrc = 'https://openweathermap.org/img/w/' + forecast.weather[0].icon + '.png';
