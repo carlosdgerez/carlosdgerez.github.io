@@ -19,23 +19,7 @@ function renderDate() {
     getMessage(day);
 
 }
-/*
-function renderMap() {
-    var location = {
-        lat: 42.0963,
-        lng: -111.8766
-    };
-    var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 13,
-        center: location
-    });
-    var marker = new google.maps.Marker({
-        position: location,
-        map: map
-    });
 
-
-}*/
 
 function getMessage(day) {
     if (day == "Friday") {
