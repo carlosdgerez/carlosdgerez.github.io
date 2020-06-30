@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Weather report for the city of Preston with local news.">
+    <title>Preston</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito%7cUbuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+
+    <script src="js/fonts.js"></script>
+
+    <script src="js/windChill.js"></script>
+    <script src="js/responsive.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/small.css">
+    <link type="text/css" rel="stylesheet" href="css/medium.css">
+    <link type="text/css" rel="stylesheet" href="css/large.css">
+</head>
+
+<body onload="renderDate(); loadTowns(); loadFonts();">
+    <div id="top">
+        <div class="message">
+            <h3>Saturday = Preston Pancakes in the Park!</h3>
+            <h3>9:00 am Friday at the city park.</h3>
+        </div>
+        <header><img src="images/icon2.png" alt="logo">
+            <div class="headings">
+                <h1>Weather M Site</h1>
+                <div class="subtitles">Weather information made sky clear.</div>
+            </div>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" id="buttom" onclick="toggleMenu()">&#9776;</a></li>
+                <li class="active"><a href="https://carlosdgerez.github.io/lesson-9/images/wireframepad.png" target="_blank">Home</a></li>
+                <li><a href="https://carlosdgerez.github.io/lesson-10/preston-10.html">Preston</a></li>
+                <li><a href="https://carlosdgerez.github.io/lesson-9/images/wireframeDesk.png" target="_blank">Soda
+                        Springs</a></li>
+                <li><a href="https://carlosdgerez.github.io/lesson-9/images/wireframephone.png" target="_blank">Fish
+                        Haven</a> </li>
+                <li><a href="https://carlosdgerez.github.io/lesson-8/stormcenter.html">Storm Center</a></li>
+                <li><a href="https://carlosdgerez.github.io/lesson7/gallery-7.html">Gallery</a></li>
+            </ul>
+            <a>
+            </a>
+        </nav>
+    </div>
+    <main>
+        <div id='todaystory'>
+            <h1> Welcome to your Local Weather site.</h1>
+            <h2>Todays story</h2>
+
+            <h3>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+                numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel
+                eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</h3>
+        </div>
+        <div class="cards"></div>
+        <section class="midle">
+            <div class="grid clearfix">
+                <div class="headingmap">
+                    <img class="googlemap " src="images/map.jpg" alt="a picture of a google map">
+                </div>
+                <div class="contain">
+                    <div class="contact">
+                        <h5 class="firstline">Weather M Site</h5>
+                        <h5>30 N 1st E</h5>
+                        <h5>Preston, ID 83263</h5>
+                        <h5> &#x260E; 999.999.9999</h5>
+                        <h5>www.watwind.com</h5>
+                        <div class="contacticons">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                                <img class="imgicon" src="images/facebook.png" alt="facebook logo"></a>
+                            <a href="https://no.pinterest.com/" target="_blank" rel="noopener">
+                                <img class="imgicon" src="images/pinterest.png" alt="pinterest logo logo">
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+                                <img src="images/youtube.png" alt="youtube logo">
+                            </a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener">
+                                <img class="imgicon" src="images/twiter.png" alt="youtube logo">
+                            </a>
+                            <a href="https://www.google.com/" target="_blank" rel="noopener">
+                                <img class="imgicon" src="images/google.png" alt="youtube logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h4 id="date">.</h4>
+        <h4>&copy; Carlos Gerez 2020
+            <a id="final" href="https://www.byui.edu/">BYUI</a></h4>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+
+
+
+</body>
+
+</html>

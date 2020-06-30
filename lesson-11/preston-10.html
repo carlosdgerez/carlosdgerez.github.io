@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Weather for Preston with 5 days forecast">
+    <title>Preston</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito%7cUbuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7ou1AMFECssspuFiBBzoSD8VWs63Cf7w&callback=initMap">
+    </script>
+    <script src="js/responsive.js"></script>
+    <script src="js/windChill.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/small.css">
+    <link type="text/css" rel="stylesheet" href="css/medium.css">
+    <link type="text/css" rel="stylesheet" href="css/large.css">
+</head>
+
+<body onload="renderDate();  windChills(); apiCall();">
+    <div id="top">
+        <div class="message">
+            <h3>Saturday = Preston Pancakes in the Park!</h3>
+            <h3>9:00 am Friday at the city park.</h3>
+        </div>
+        <header><img src="images/icon2.png" alt="logo">
+            <div class="headings">
+                <h1>Weather M Site</h1>
+                <div class="subtitles">Weather information made sky clear.</div>
+            </div>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" id="buttom" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="https://carlosdgerez.github.io/lesson-9/">Home</a></li>
+                <li class="active"><a href="https://carlosdgerez.github.io/lesson5/preston-5.html">Preston</a></li>
+                <li><a href="">Soda Springs</a></li>
+                <li><a href="">Fish Haven</a></li>
+                <li><a href="https://carlosdgerez.github.io/lesson-8/stormcenter.html">Storm Center</a></li>
+                <li><a href="https://carlosdgerez.github.io/lesson7/gallery-7.html">Gallery</a></li>
+            </ul>
+            <a>
+            </a>
+        </nav>
+    </div>
+    <main>
+
+        <h2 class="title">Preston Idaho</h2>
+        <section class="midle">
+            <div class="main_img">
+                <img class="home_img" src="images/pic1.jpg" alt="image of the city of Preston">
+                <section class="banner">
+
+                    <h2> Weather Summary</h2>
+                    <hr>
+                    <h3>Currently: <span class="info" id="current"></span></h3>
+                    <h3>Current Temp: <span class="info" id="temp"></span>&#176;F</h3>
+                    <h3>Wind Chill: <span class="info" id="chill"></span>&#176;F</h3>
+                    <h3>Humidity: <span class="info" id="humidity"></span>%</h3>
+                    <h3>Wind Speed: <span class="info" id="wind"></span>MPH</h3>
+                </section>
+            </div>
+            <br>
+            <div>
+                <h2 class="forecast">5 Days Forecast</h2>
+            </div>
+            <div class="flex">
+                <div class="flex-col">
+                    <span class="col-head" id="day1"></span>
+                    <img class="img-col" id="icon1" src="#" alt="#">
+                    <span class="data" id="temp1"></span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head" id="day2"></span>
+                    <img class="img-col" id="icon2" src="#" alt="#">
+                    <span class="data" id="temp2"></span>
+
+                </div>
+
+                <div class="flex-col">
+                    <span class="col-head" id="day3"></span>
+                    <img class="img-col" id="icon3" src="#" alt="#">
+                    <span class="data" id="temp3"></span>
+
+                </div>
+                <div class="flex-col">
+                    <span class="col-head" id="day4"></span>
+                    <img class="img-col" id="icon4" src="#" alt="#">
+                    <span class="data" id="temp4"></span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head" id="day5"></span>
+                    <img class="img-col" id="icon5" src="#" alt="#">
+                    <span class="data" id="temp5"></span>
+                </div>
+            </div>
+            <br>
+            <div class="article">
+                <img class="img-center" src="images/pic2.jpg" alt="image two persons talking">
+                <div class="articlebody">
+                    <h3>The Raven</h3>
+                    <h4>By Edgar Allan Poe</h4>
+                    <p>Once upon a midnight dreary, while I pondered, weak and weary, Over many a quaint and curious volume of forgotten lore— While I nodded, nearly napping, suddenly there came a tapping, As of some one gently rapping, rapping at my chamber
+                        door. “’Tis some visitor,” I muttered, “tapping at my chamber door— Only this and nothing more. Ah, distinctly I remember it was in the bleak December; And each separate dying ember wrought its ghost upon the floor. Eagerly I wished
+                        the morrow;—vainly I had sought to borrow From my books surcease of sorrow—sorrow for the lost Lenore— For the rare and radiant maiden whom the angels name Lenore— Nameless here for evermore.”</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="headingmap">
+                    <iframe class="mapsmall" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628251313!2d-111.9153446000191!3d42.09980531206833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20Idaho%2083263%2C%20USA!5e0!3m2!1sno!2s!4v1593179711271!5m2!1sno!2s"
+                        style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" width="175" height="285"></iframe>
+                    <iframe class="maplarge" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628251313!2d-111.9153446000191!3d42.09980531206833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20Idaho%2083263%2C%20USA!5e0!3m2!1sno!2s!4v1593179711271!5m2!1sno!2s"
+                        width="400" height="310" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="contain">
+                    <div class="contact">
+                        <h5 class="firstline">Weather M Site</h5>
+                        <h5>30 N 1st E</h5>
+                        <h5>Preston, ID 83263</h5>
+                        <h5> &#x260E; 999.999.9999</h5>
+                        <h5>www.watwind.com</h5>
+                        <div class="contacticons">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                                <img class="imgicon" src="images/facebook.png" alt="facebook logo"></a>
+                            <a href="https://no.pinterest.com/" target="_blank" rel="noopener">
+                                <img class="imgicon" src="images/pinterest.png" alt="pinterest logo logo">
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+                                <img src="images/youtube.png" alt="youtube logo">
+                            </a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener">
+                                <img class="imgicon" src="images/twiter.png" alt="youtube logo">
+                            </a>
+                            <a href="https://www.google.com/" target="_blank" rel="noopener">
+                                <img class="imgicon" src="images/google.png" alt="youtube logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h4 id="date">.</h4>
+        <h4>&copy; Carlos Gerez 2020
+            <a id="final" href="https://www.byui.edu/">BYUI</a></h4>
+    </footer>
+
+</body>
+
+</html>
