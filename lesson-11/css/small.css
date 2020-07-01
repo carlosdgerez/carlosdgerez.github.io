@@ -141,7 +141,8 @@ nav ul li.active a {
     height: 65%;
     flex-wrap: wrap;
     color: white;
-    font-size: 1.8vw;
+    font-size: 1.64vw;
+    line-height: 3vw;
     font-weight: 900;
     top: 35%;
     right: 54%;

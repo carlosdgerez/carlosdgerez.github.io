@@ -8,6 +8,7 @@
     .banner {
         top: 20%;
         right: 60%;
+        line-height: 2.5vw;
     }
     .mapsmall {
         display: none;

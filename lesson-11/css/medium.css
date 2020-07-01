@@ -140,6 +140,11 @@
         section .information h1,
         p,
         h2 {
-            font-size: 3rem;
+            font-size: 1rem;
+        }
+        .banner {
+            font-size: 1.2vw;
+            display: block;
+            line-height: 1.68vw;
         }
     }
