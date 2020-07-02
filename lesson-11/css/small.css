@@ -152,10 +152,6 @@ nav ul li.active a {
     padding: 15px;
 }
 
-h2.title {
-    font-size: 1.6vw;
-}
-
 h2#bannerTitle {
     font-size: 1.3vw;
 }
@@ -376,11 +372,20 @@ p {
 }
 
 #todaystory {
+    margin: 100px;
     padding: 40px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-style: italic;
-    color: brown;
+    color: black;
+    background-color: ghostwhite;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+}
+
+h2.title {
+    color: skyblue;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 3vw;
 }
 
 .cards section {
