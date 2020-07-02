@@ -152,6 +152,14 @@ nav ul li.active a {
     padding: 15px;
 }
 
+h2.title {
+    font-size: 1.6vw;
+}
+
+h2#bannerTitle {
+    font-size: 1.3vw;
+}
+
 .info {
     color: #f6dc26ff;
 }
