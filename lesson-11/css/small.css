@@ -180,6 +180,15 @@ hr {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
 }
 
+div.cards2 {
+    display: block;
+    border: solid 3px red;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    background-color: #ff7465ff;
+    opacity: 0.8;
+}
+
 .img-center {
     width: 100%;
 }
@@ -471,4 +480,9 @@ form label.top input:required {
 
 form label.top input:required:valid {
     border-left: green solid 6px;
+}
+
+#final {
+    color: #f6dc26ff;
+    font-weight: 900;
 }

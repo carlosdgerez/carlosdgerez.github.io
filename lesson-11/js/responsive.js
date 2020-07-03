@@ -41,7 +41,7 @@ function loadTowns() {
             const fishhaven = towns.filter(town => (town.name == 'Fish Haven'));
 
             const sodasprings = towns.filter(town => (town.name == 'Soda Springs'));
-            console.table(sodasprings);
+
 
             addTown(preston);
             addTown(fishhaven);
@@ -97,4 +97,71 @@ function addTown(town) {
 function setValue() {
     var message = document.getElementById("value").value;
     document.getElementById("severity").innerHTML = message;
+}
+
+function setActivity(townName) {
+    const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+    fetch(requestURL)
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(jsonObject) {
+
+            const towns = jsonObject['towns'];
+
+            const townResult = towns.filter(town => (town.name == townName));
+
+
+
+
+
+            addTownActivity(townResult);
+
+        });
+
+    function addTownActivity(town) {
+
+        /* create elements to show and titles*/
+
+        let div = document.createElement('div');
+
+        let h2 = document.createElement('h2');
+        h2.innerHTML = `Upcoming Events`;
+        let hr = document.createElement('hr');
+        h2.setAttribute('id', 'eventTitle');
+        hr.setAttribute('id', 'eventLine');
+        div.appendChild(h2);
+        div.appendChild(hr);
+
+
+        /*take information from events in town*/
+        var x;
+        var h3;
+        for (x in town[0].events) {
+            console.log(town[0].events[x]);
+            h3 = document.createElement('h3');
+            h3.innerHTML = `${town[0].events[x]}`;
+            h3.setAttribute('class', 'event');
+            div.appendChild(h3);
+        }
+
+
+
+
+        div.setAttribute('class', 'townEvents');
+
+
+        /*Add content to the card and set it in div */
+
+
+
+
+
+        document.querySelector('div.cards2').appendChild(div);
+
+
+    }
+
+
+
 }
