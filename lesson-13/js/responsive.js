@@ -16,16 +16,11 @@ function renderDate() {
     document.getElementById("date").innerHTML = day + ",   " + daynumber + " of " + month + "   " + year;
 
 
-    getMessage(day);
+
 
 }
 
 
-function getMessage(day) {
-    if (day == "Friday") {
-        document.getElementsByClassName("message")[0].classList.toggle("fridaymessage");
-    }
-}
 
 function loadTowns() {
     const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
