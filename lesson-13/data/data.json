@@ -1,0 +1,56 @@
+{
+    "rental_type": [{
+            "name": "Honda Metro Scooter",
+            "maxpers": "1",
+            "halfDayR": "20",
+            "fullDayR": "30",
+            "halfDayW": "25",
+            "fullDayW": "35"
+        },
+
+        {
+            "name": "Honda Dio Scooter",
+            "maxpers": "2",
+            "halfDayR": "30",
+            "fullDayR": "40",
+            "halfDayW": "35",
+            "fullDayW": "45"
+        },
+
+        {
+            "name": "Honda PCX150 Scooter",
+            "maxpers": "2",
+            "halfDayR": "40",
+            "fullDayR": "50",
+            "halfDayW": "45",
+            "fullDayW": "55"
+        },
+        {
+            "name": "Honda Pioneer ATV",
+            "maxpers": "4",
+            "halfDayR": "50",
+            "fullDayR": "70",
+            "halfDayW": "60",
+            "fullDayW": "80"
+        },
+
+        {
+            "name": "Jeep Wrangler - 4 door with a/c",
+            "maxpers": "5",
+            "halfDayR": "70",
+            "fullDayR": "100",
+            "halfDayW": "85",
+            "fullDayW": "125"
+        },
+        {
+            "name": "Jeep Wrangler - 2 door",
+            "maxpers": "4",
+            "halfDayR": "60",
+            "fullDayR": "85",
+            "halfDayW": "70",
+            "fullDayW": "90"
+        }
+
+    ]
+
+}
