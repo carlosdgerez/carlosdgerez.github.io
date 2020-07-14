@@ -1,5 +1,5 @@
 function apiCall(townCode) {
-    const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + townCode + "&APPID=426ea6dd30efaa6a3321c678df5eef94&units=imperial"
+    const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + townCode + "&APPID=426ea6dd30efaa6a3321c678df5eef94&units=metric"
 
 
 
@@ -19,7 +19,7 @@ function apiCall(townCode) {
 
         });
 
-    const apiURLF = "https://api.openweathermap.org/data/2.5/forecast?id=" + townCode + "&APPID=426ea6dd30efaa6a3321c678df5eef94&units=imperial"
+    const apiURLF = "https://api.openweathermap.org/data/2.5/forecast?id=" + townCode + "&APPID=426ea6dd30efaa6a3321c678df5eef94&units=metric"
 
 
 
