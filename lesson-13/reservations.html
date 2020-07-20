@@ -75,69 +75,60 @@
                         required></label>
                 <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
                 <label class="top">Phone Number*<input type="tel" name="phone"  required></label>
-                <label class="top">Zip Code*<input type="number" name="zip" required></label>
+                <label class="top">Country of origin*<input type="tel" name="country" required></label>
+
             </fieldset>
 
             <fieldset>
-                <legend>Storm Report</legend>
-                <label class="top">Storm Date<input type="date" name="date"></label>
-                <label class="top">Storm Type<input list="storms" name="storm" ></label>
-                <datalist id="storms">
-                    <option value="Flash Flood"></option>
-                    <option value="Hail"></option>
-                    <option value="Hurricane"></option>
-                    <option value="Thunderstorm"></option>
-                    <option value="Tornado"></option>
-                </datalist>
-                <label id="levels">Storm Severity (1 to 10)<span id="severity">5</span>
-                    <input id="value" type="range" list="level" name="severity" onchange="setValue()" min="1" max="10"
-                        step="1" value="5"></label>
-                <datalist id="level">
-                    <option value="0" label="0"></option>
-                    <option value="1"></option>
-                    <option value="2"></option>
-                    <option value="3"></option>
-                    <option value="4"></option>
-                    <option value="5" label="5"></option>
-                    <option value="6"></option>
-                    <option value="7"></option>
-                    <option value="8"></option>
-                    <option value="9"></option>
-                    <option value="10" label="10"></option>
-                </datalist>
-                <label class="top">Storm Region
-                    <select name="region">
-                        <option value="">--Please Select a Region-- &#9662;</option>
-                        <option value="preston">Preston</option>
-                        <option value="soda springs">Soda Springs</option>
-                        <option value="fish haven">Fish Haven</option>
+                <legend>Rent Information</legend>
+                <label class="top">Cruise or Fly Number<input type="text" name="arrive" ></label>
 
-                    </select>
-                </label>
-                <label class="top">User in Danger Level</label>
-                <label class="sbs"><input type="radio" name="danger" value="yes">Yes</label>
-                <label class="sbs"><input type="radio" name="danger" value="maybe">Maybe</label>
-                <label class="sbs"><input type="radio" name="danger" value="not">Not</label>
+                <label class="top">How many days.</label>
+                <label class="top">From date:<input type="date" name="zip" required></label>
+                <label class="top">To date:<input type="date" name="zip" required></label>
+
+                <label class="top">Place of pick up place</label>
+                <label class="sbs"><input type="radio" name="pickup" value="playa">Playa del Carmen</label>
+                <label class="sbs"><input type="radio" name="pickup" value="terminal">Terminal Puerta Maya</label>
+
+                <label class="top">Place of drop off</label>
+                <label class="sbs"><input type="radio" name="dropoff" value="playa">Playa del Carmen</label>
+                <label class="sbs"><input type="radio" name="dropoff" value="terminal">Terminal Puerta Maya</label>
+
+
+
+                <label class="top">Type vehicle<input list="vehicles" name="vehicle" placeholder ="choose an option"></label>
+                <datalist id="vehicles">
+                    <option value="Honda Metropolitan 49 cc 1 pers."></option>
+                    <option value="Honda Dio 110cc 2 pers."></option>
+                    <option value="Honda PCX150 149cc 2 pers."></option>
+                    <option value="Honda Pioneer 1000cc"></option>
+                    <option value="2-door Jeep Wrangler open air manual 4 pers.">
+                    <option value="4-door Jeep Wrangler manual A/C 5 pers."> </option>
+                </datalist>
+
+
+
             </fieldset>
 
             <fieldset>
-                <legend class="top">Aditional Information or Comments</legend>
-                <label class="top">Text here:
+                <legend class="top">Please write here special needs like acommodations/comments:</legend>
+                <label class="top">
                     <textarea name="information" rows="4" cols="80"></textarea>
                 </label>
             </fieldset>
-            <input type="submit" value="Send Report" name="submit" class="submitBtn">
+            <input type="submit" value="Send Request" name="submit" class="submitBtn">
 
         </form>
 
 
         <div class="contain">
             <div class="contact">
-                <h5 class="firstline">Weather M Site</h5>
+                <h5 class="firstline">Scooters</h5>
                 <h5>30 N 1st E</h5>
-                <h5>Preston, ID 83263</h5>
+                <h5>Cozumel, MX 83263</h5>
                 <h5> &#x260E; 999.999.9999</h5>
-                <h5>www.watwind.com</h5>
+                <h5>www.scooters.com</h5>
                 <div class="contacticons">
                     <a href="https://www.facebook.com/" target="_blank" rel="noopener">
                         <img class="imgicon" src="images/facebook.png" alt="facebook logo"></a>

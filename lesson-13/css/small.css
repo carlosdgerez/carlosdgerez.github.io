@@ -338,7 +338,7 @@ div span.data {
 #grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "one" "two" "three" "four" "five" "six" "seven" "eight" "nine";
+    grid-template-areas: "one" "two" "three" "four" "five" "six";
     justify-items: stretch;
     padding: 10px;
 }

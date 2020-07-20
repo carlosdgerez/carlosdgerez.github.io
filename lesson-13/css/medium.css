@@ -107,7 +107,7 @@
             #grid {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                grid-template-areas: "one two" " three four" "five six" "seven eight" "nine nine";
+                grid-template-areas: "one two" " three four" "five six";
             }
             .imgicon {
                 width: 25%;
