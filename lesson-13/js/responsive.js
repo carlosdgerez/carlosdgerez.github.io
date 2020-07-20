@@ -20,7 +20,12 @@ function renderDate() {
 
 }
 
+function update() {
+    document.getElementById("update").textContent = document.lastModified;
 
+
+
+}
 
 function loadTowns() {
     const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';

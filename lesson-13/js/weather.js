@@ -28,7 +28,7 @@ function apiCall(townCode) {
         .then((jsObject) => {
 
 
-            const fivedayforecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
+            const fivedayforecast = jsObject.list.filter(x => x.dt_txt.includes('12:00:00'));
 
 
             const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -37,7 +37,7 @@ function apiCall(townCode) {
             let desc = "";
             fivedayforecast.forEach(forecast => {
                 let d = new Date(forecast.dt_txt);
-                document.getElementById(`temp${day+1}`).textContent = forecast.main.temp.toFixed(0) + "° F";
+                document.getElementById(`temp${day+1}`).textContent = forecast.main.temp.toFixed(0) + "° C";
                 document.getElementById(`day${day+1}`).textContent = weekdays[d.getDay()];
                 desc = forecast.weather[0].description;
                 imagesrc = 'https://openweathermap.org/img/w/' + forecast.weather[0].icon + '.png';

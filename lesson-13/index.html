@@ -4,62 +4,108 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="Weather report for the city of Preston with local news.">
-    <title>Weather Site.</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito%7cUbuntu&display=swap" rel="stylesheet">
+    <meta name="Description" content="Weather for Preston with 5 days forecast">
+    <title>Scooters Rentals</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
-
-    <script src="js/fonts.js"></script>
-
-    <script src="js/windChill.js"></script>
+    </script>
     <script src="js/responsive.js"></script>
+    <script src="js/weather.js"></script>
     <link type="text/css" rel="stylesheet" href="css/small.css">
     <link type="text/css" rel="stylesheet" href="css/medium.css">
     <link type="text/css" rel="stylesheet" href="css/large.css">
 </head>
 
-<body onload="renderDate(); loadTowns(); loadFonts();">
+<body onload="renderDate();  apiCall('3530103');  update(); setActivity('Preston');">
     <div id="top">
-        <div class="message">
-            <h3>Saturday = Preston Pancakes in the Park!</h3>
-            <h3>9:00 am Friday at the city park.</h3>
-        </div>
+
         <header><img src="images/icon2.png" alt="logo">
             <div class="headings">
-                <h1>Weather M Site</h1>
-                <div class="subtitles">Weather information made sky clear.</div>
+                <h1>Scooters</h1>
+                <div class="subtitles">Cozumel closer to You.</div>
             </div>
         </header>
         <nav>
             <ul class="navigation">
-                <li><a href="#" id="buttom" onclick="toggleMenu()">&#9776;</a></li>
-                <li class="active"><a href="https://carlosdgerez.github.io/lesson-11/" target="_blank">Home</a></li>
-                <li><a href="preston.html">Preston</a></li>
-                <li><a href="sodasprings.html" target="_blank">Soda
-                        Springs</a></li>
-                <li><a href="fishhaven.html" target="_blank">Fish
-                        Haven</a> </li>
-                <li><a href="stormcenter.html">Storm Center</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="" id="buttom" onclick="toggleMenu()">&#9776;</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="">Language</a></li>
             </ul>
-            <a>
-            </a>
+
         </nav>
     </div>
     <main>
-        <div id='todaystory'>
-            <h1> Welcome to your Local Weather site.</h1>
-            <h2>Todays story</h2>
 
-            <h3>Franklin County Air Advisory issued Preston, ID | Idaho8.com | 01-21 PRESTON, Idaho (KIFI/KIDK) - The Idaho Department of Environmental Quality issued an "Air Quality Advisory" for residents of Franklin County Tuesday. IDEQ says a stagnant
-                atmosphere and elevated pollutant levels may create adverse health effects as a result of degraded air quality. From newsbreak.com</h3>
-        </div>
-        <div class="cards"></div>
+        <h2 class="title">Cozumel</h2>
+        <hr>
         <section class="midle">
-            <div class="grid clearfix">
+            <div class="main_img">
+                <img class="home_img" src="images/pic1.jpg" alt="Cozumel images">
+                <section class="banner">
+
+                    <h2 id="bannerTitle">Today Island Weather</h2>
+                    <hr>
+                    <h3>Currently: <span class="info" id="current"></span></h3>
+                    <h3>Current Temp: <span class="info" id="temp"></span>&#176;C</h3>
+
+                    <h3>Humidity: <span class="info" id="humidity"></span>%</h3>
+                    <h3>Wind Speed: <span class="info" id="wind"></span>MPH</h3>
+                </section>
+            </div>
+            <br>
+            <div>
+                <h2 class="forecast">5 Days Forecast</h2>
+            </div>
+            <div class="flex">
+                <div class="flex-col">
+                    <span class="col-head" id="day1"></span>
+                    <img class="img-col" id="icon1" src="#" alt="#">
+                    <span class="data" id="temp1"></span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head" id="day2"></span>
+                    <img class="img-col" id="icon2" src="#" alt="#">
+                    <span class="data" id="temp2"></span>
+
+                </div>
+
+                <div class="flex-col">
+                    <span class="col-head" id="day3"></span>
+                    <img class="img-col" id="icon3" src="#" alt="#">
+                    <span class="data" id="temp3"></span>
+
+                </div>
+                <div class="flex-col">
+                    <span class="col-head" id="day4"></span>
+                    <img class="img-col" id="icon4" src="#" alt="#">
+                    <span class="data" id="temp4"></span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head" id="day5"></span>
+                    <img class="img-col" id="icon5" src="#" alt="#">
+                    <span class="data" id="temp5"></span>
+                </div>
+            </div>
+            <br>
+            <div class="cards2"></div>
+            <div class="article">
+                <img class="img-center" src="images/pic2.jpg" alt="image two persons talking">
+                <div class="articlebody">
+                    <h3>Preston</h3>
+                    <h4>Name and Location</h4>
+                    <p>Located on the flat, at the junction of Highways 91 and 36 is the county seat of Franklin County: Preston, Idaho. Prior to 1881, the flat was known as “Worm Creek” [pronounced “crick”]. Those that settled this area were predominantly
+                        Mormon and their leadership came from the LDS Church President in Salt Lake City, Utah. The name Preston was chosen for the area in the following manner as recorded by Baltzer Peterson: On May 14, 1881, a special meeting was held.
+                        Some of the Church Leaders at Salt Lake City objected to the name “Worm Creek” as pertaining to any Church Organization. They thought that a more appropriate name should be given the Ward for they were not in favor of the name
+                        “Worm” being used when it pertained to anything connected with the Church. Mrs. Rachel Porter, wife of Bishop Porter, had the privilege of suggesting the name “Preston” in honor of Bishop William B. Preston of the Cache Stake,
+                        and who later became the presiding Bishop of the Church. Thus Preston became the name of the Ward and the Community. From Franklin County Historical Society</p>
+                </div>
+            </div>
+            <div class="grid">
                 <div class="headingmap">
                     <iframe class="mapsmall" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d47369.91461977414!2d-111.90718304154487!3d42.09419786632367!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1593806687196!5m2!1sen!2s" style="border:0;" allowfullscreen="" aria-hidden="false"
                         tabindex="0" width="305" height="285"></iframe>
@@ -96,13 +142,11 @@
     </main>
     <footer>
         <h4 id="date">.</h4>
-        <h4>&copy; Carlos Gerez 2020
-            <a id="final" href="https://www.newsbreak.com/idaho/fish-haven">News Break more Local News</a></h4>
+        <p id="date">Last Updated: <span id="update"></span></p>
+        <h4>&copy; Carlos Gerez 2020 |
+            <a id="final" href="https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temperature&lat=42.0963&lon=-111.8766&zoom=12">Openweather Preston Map</a>
+        </h4>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-
-
-
 
 </body>
 
