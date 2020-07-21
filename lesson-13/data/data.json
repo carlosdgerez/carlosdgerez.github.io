@@ -1,5 +1,5 @@
 {
-    "rental_type": [{
+    "rental": [{
             "name": "Honda Metro Scooter",
             "maxpers": "1",
             "halfDayR": "20",

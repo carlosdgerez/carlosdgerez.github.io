@@ -36,6 +36,7 @@ function loadTowns() {
         .then(function(jsonObject) {
 
             const towns = jsonObject['towns'];
+            console.log(towns);
             const preston = towns.filter(town => (town.name == 'Preston'));
 
             const fishhaven = towns.filter(town => (town.name == 'Fish Haven'));
@@ -68,7 +69,7 @@ function addTown(town) {
     h3.innerHTML = `Current Population: ${town[0].currentPopulation}`;
     h3b.innerHTML = `Average Rainfall: ${town[0].averageRainfall}`;
 
-    image.setAttribute('src', `images/${town[0].photo}`);
+    image.setAttribute('src', `images/beach2.jpg`);
     image.setAttribute('alt', `Picture of the city of  ${town[0].name}`);
     image.setAttribute('id', 'hometown');
     h1.setAttribute('class', 'data');
@@ -171,35 +172,42 @@ function loadRents() {
             return response.json();
         })
         .then(function(jsonObject) {
-            /*console.table(jsonObject); temporary checking for valid response and data parsing*/
-            const prophets = jsonObject['prophets'];
-            for (let i = 0; i < prophets.length; i++) {
-
-                // create elements to show
-                let card = document.createElement('section');
-                let h2 = document.createElement('h2');
-                let h3 = document.createElement('h3')
-                let h3b = document.createElement('h3')
-                let image = document.createElement('img');
-
-                // Add content to the elements
-                h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-                image.setAttribute('src', prophets[i].imageurl);
-                image.setAttribute('alt', prophets[i].name + prophets[i].lastname + "-" + prophets[i].order);
-                h3.textContent = "Date of Birth: " + prophets[i].birthdate;
-                h3b.textContent = "Place of Birth: " + prophets[i].birthplace;
+            console.table(jsonObject); /*temporary checking for valid response and data parsing*/
+            const myObj = jsonObject['rental'];
+            console.table(myObj);
+            document.getElementById("rents").innerHTML = myObj[0].name;
 
 
-                // Add content to the card and set it in div 
-                card.appendChild(h2);
-                card.appendChild(h3);
-                card.appendChild(h3b);
-                card.appendChild(image);
+            let txt;
+            var x;
 
-                document.querySelector('div.cards').appendChild(card);
+
+            txt = "<table 'border='1' >";
+            txt += "<tr><th colspan = '6'>Max Persons and Price Chart (includes tax)</th></tr>"
+            txt += "<tr><th colspan = '2'></th><th colspan = '2'>Reservation</th><th colspan = '2'>Walk Inn</th></tr>"
+            txt += "<tr><th>Rental Type</th><th>Max. Persons</th><th>Half Day (3 hrs)</th><th>Full Day</th><th>Half Day (3 hrs)</th><th>Full Day</th></tr>";
+
+
+
+            for (x = 0; x < myObj.length; x++) {
+
+
+
+                txt += "<tr >";
+
+                txt += "<td>" + myObj[x].name + "</td>";
+                txt += "<td>" + myObj[x].maxpers + "</td>";
+                txt += "<td>" + '$' + myObj[x].halfDayR + "</td>";
+
+                txt += "<td>" + '$' + myObj[x].fullDayR + "</td>";
+                txt += "<td>" + '$' + myObj[x].halfDayW + "</td>";
+                txt += "<td>" + '$' + myObj[x].fullDayW + "</td>";
+                txt += "</tr>";
 
 
             }
+            txt += "</table>";
+            document.getElementById("rents").innerHTML = txt;
 
         });
 }

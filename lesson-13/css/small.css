@@ -40,7 +40,7 @@ body {
 }
 
 #top {
-    background-color: #ee7465ff;
+    background-color: rgb(127, 161, 51);
 }
 
 header img {
@@ -79,7 +79,7 @@ img {
 
 nav {
     margin: 0 auto;
-    background-color: #ee7465ff;
+    background-color: rgb(127, 161, 51);
 }
 
 .navigation {
@@ -134,6 +134,8 @@ nav ul li.active a {
     width: 100%;
 }
 
+
+/*
 .banner {
     position: absolute;
     width: 30%;
@@ -149,7 +151,7 @@ nav ul li.active a {
     background-color: #ff7465ff;
     opacity: 0.8;
     padding: 15px;
-}
+}*/
 
 h2#bannerTitle {
     font-size: 1.3vw;
@@ -173,7 +175,6 @@ hr {
     display: none;
 }
 
-.flex,
 .headingmap {
     display: none;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
@@ -210,13 +211,15 @@ footer {
     text-align: center;
     max-width: 80%;
     font-size: 0.8em;
-    background-color: #ee7465ff;
+    background-color: rgb(127, 161, 51);
     padding: 0.1rem;
 }
 
 .contact {
     text-align: center;
     margin: 0 auto;
+    width: 80%;
+    height: 5%;
 }
 
 h5,
@@ -382,7 +385,7 @@ p {
 #todaystory {
     width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
-    background-color: #ff7465ff;
+    background-color: rgb(108, 166, 45);
     opacity: 0.8;
     padding: 40px;
     text-align: center;
@@ -392,7 +395,7 @@ p {
 }
 
 h2.title {
-    color: skyblue;
+    color: rgb(144, 148, 138);
     text-shadow: 2px 2px 4px #000000;
     font-size: 3vw;
 }
@@ -485,4 +488,36 @@ form label.top input:required:valid {
 #final {
     color: #f6dc26ff;
     font-weight: 900;
+}
+
+table td,
+table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: rgb(37, 139, 207);
+    color: white;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.forecast,
+.flex {
+    display: none;
 }
