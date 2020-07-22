@@ -16,11 +16,12 @@
                 display: flex;
                 flex-flow: row wrap;
                 width: 80%;
+                margin-left: 10vw;
             }
             .flex-col {
                 width: 10%;
                 flex: 1 1 auto;
-                background-color: white;
+                background-color: rgb(37, 139, 207);
             }
             .flex-col,
             .column-col {
@@ -37,7 +38,7 @@
             .col-head {
                 font-weight: 700;
                 font-size: 1rem;
-                background-color: #f6dc26ff;
+                background-color: rgb(108, 166, 45);
                 color: black;
             }
             .col-head {
@@ -162,5 +163,10 @@
             .headingmap {
                 display: none;
                 box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+            }
+            #products {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: "g3 g4 g5" " g6 g7 g8 ";
             }
         }

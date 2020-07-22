@@ -56,7 +56,34 @@
             "picture": "images/beach7.jpg",
             "open": "8 am to 5 pm Mon to Sat",
             "link": "https://www.tripadvisor.com/Attraction_Review-g150809-d153700-Reviews-Parque_Nacional_Arrecifes_de_Cozumel-Cozumel_Yucatan_Peninsula.html"
+        }, {
+            "id": "tour4",
+            "name": "San Gervasio",
+            "atraction": "San Gervasio is an archaeological site of the pre-Columbian Maya civilization.",
+            "rating": "4.5 Exelent 1693 reviews",
+            "picture": "images/beach7.jpg",
+            "open": "8 am to 5 pm Mon to Friday",
+            "link": "https://www.inah.gob.mx/zonas/101-zona-arqueologica-san-gervasio"
+        },
+
+        {
+            "id": "tour5",
+            "name": "Palancar Reef",
+            "atraction": "Swimming & snorkeling",
+            "rating": "4.5 Exelent 2693 reviews",
+            "picture": "images/beach8.jpg",
+            "open": "8 am to 5 pm Mon to Sat",
+            "link": "https://palancarreef.negocio.site/"
+        }, {
+            "id": "tour6",
+            "name": "Arrecifes de Cozumel National Park",
+            "atraction": "Swimming  & snorkeling",
+            "rating": "4.5 Exelent 2693 reviews",
+            "picture": "images/beach1.jpg",
+            "open": "8 am to 5 pm Mon to Sat",
+            "link": "https://www.tripadvisor.com/Attraction_Review-g150809-d153700-Reviews-Parque_Nacional_Arrecifes_de_Cozumel-Cozumel_Yucatan_Peninsula.html"
         }
+
 
     ]
 

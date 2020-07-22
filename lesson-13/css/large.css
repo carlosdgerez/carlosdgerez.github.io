@@ -68,4 +68,9 @@
         display: block;
         margin: 20px;
     }
+    #products {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "g3 g4 g5 g6 g7 g8 ";
+    }
 }

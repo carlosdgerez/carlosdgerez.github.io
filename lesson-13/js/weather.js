@@ -13,9 +13,9 @@ function apiCall(townCode) {
             const wind = document.querySelector('#wind');
 
             currentWeather.textContent = jsObject.weather[0].description;
-            currentTemp.textContent = jsObject.main.temp.toFixed(0);
-            humidity.textContent = jsObject.main.humidity.toFixed(0);
-            wind.textContent = jsObject.wind.speed.toFixed(0);
+            currentTemp.textContent = jsObject.main.temp.toFixed(0) + "  ";
+            humidity.textContent = jsObject.main.humidity.toFixed(0) + "  ";
+            wind.textContent = jsObject.wind.speed.toFixed(0) + "  ";
 
         });
 
