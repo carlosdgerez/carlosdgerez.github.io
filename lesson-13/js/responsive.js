@@ -75,7 +75,7 @@ function addTour(myObj) {
         h2.setAttribute('class', 'data');
         h3.setAttribute('class', 'data');
         a.setAttribute('class', 'data');
-        a.setAttribute('href', `${myObj.tours[x].open}`);
+        a.setAttribute('href', `${myObj.tours[x].link}`);
         div.setAttribute('class', 'information');
 
 

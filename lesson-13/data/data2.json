@@ -5,7 +5,8 @@
             "atraction": "Swimming with dolphins & snorkeling",
             "rating": "4.5 Exelent 2693 reviews",
             "picture": "images/beach2.jpg",
-            "open": "8 am to 5 pm Mon to Sat"
+            "open": "8 am to 5 pm Mon to Sat",
+            "link": "https://www.cozumelparks.com/en/"
 
         },
 
@@ -15,7 +16,8 @@
             "atraction": "Popular stretch for swimming & sunning",
             "rating": "4.3 Very Good 3358 reviews",
             "picture": "images/beach3.jpg",
-            "open": "8 am  Mon "
+            "open": "8 am  Mon ",
+            "link": "https://www.playamia.com/"
         },
 
         {
@@ -24,7 +26,8 @@
             "atraction": "Island",
             "rating": "4.5 Exelent 26 reviews",
             "picture": "images/beach4.jpg",
-            "open": "Always"
+            "open": "Always",
+            "link": "http://islapasion.com.mx/"
         },
         {
             "id": "tour4",
@@ -32,7 +35,8 @@
             "atraction": "San Gervasio is an archaeological site of the pre-Columbian Maya civilization.",
             "rating": "4.5 Exelent 1693 reviews",
             "picture": "images/beach5.jpg",
-            "open": "8 am to 5 pm Mon to Friday"
+            "open": "8 am to 5 pm Mon to Friday",
+            "link": "https://www.inah.gob.mx/zonas/101-zona-arqueologica-san-gervasio"
         },
 
         {
@@ -41,7 +45,8 @@
             "atraction": "Swimming & snorkeling",
             "rating": "4.5 Exelent 2693 reviews",
             "picture": "images/beach6.jpg",
-            "open": "8 am to 5 pm Mon to Sat"
+            "open": "8 am to 5 pm Mon to Sat",
+            "link": "https://palancarreef.negocio.site/"
         },
         {
             "id": "tour6",
@@ -49,7 +54,8 @@
             "atraction": "Swimming  & snorkeling",
             "rating": "4.5 Exelent 2693 reviews",
             "picture": "images/beach7.jpg",
-            "open": "8 am to 5 pm Mon to Sat"
+            "open": "8 am to 5 pm Mon to Sat",
+            "link": "https://www.tripadvisor.com/Attraction_Review-g150809-d153700-Reviews-Parque_Nacional_Arrecifes_de_Cozumel-Cozumel_Yucatan_Peninsula.html"
         }
 
     ]

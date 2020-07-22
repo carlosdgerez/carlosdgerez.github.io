@@ -60,7 +60,8 @@ header img {
 .subtitles {
     font-style: italic;
     letter-spacing: 1pt;
-    color: #f6dc26ff;
+    color: black;
+    font-weight: bolder;
     margin-left: 20px;
     font-size: 120%;
 }
@@ -140,7 +141,7 @@ h2#bannerTitle {
     font-size: 1.3vw;
 }
 .info {
-    color: #f6dc26ff;
+    color: #96c0ea;
 }
 hr {
     width: 100%;
@@ -209,7 +210,7 @@ h3 {
 }
 .fridaymessage {
     display: block;
-    background-color: #f6dc26ff;
+    background-color: #96c0ea;
     color: black;
     text-align: center;
     padding: 0.1rem;
@@ -322,6 +323,7 @@ p {
     width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
     background-color: rgb(108, 166, 45);
+    background-image: url('/lesson-13/images/background.jpg');
     opacity: 0.8;
     padding: 40px;
     text-align: center;
