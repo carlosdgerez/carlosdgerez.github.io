@@ -34,7 +34,7 @@ function loadTowns() {
             return response.json();
         })
         .then(function(jsonObject) {
-            console.log(jsonObject);
+
 
             addTour(jsonObject);
 
@@ -138,7 +138,7 @@ function setActivity(townName) {
         var x;
         var h3;
         for (x in town[0].events) {
-            console.log(town[0].events[x]);
+
             h3 = document.createElement('h3');
             h3.innerHTML = `${town[0].events[x]}`;
             h3.setAttribute('class', 'event');
@@ -170,9 +170,9 @@ function loadRents() {
             return response.json();
         })
         .then(function(jsonObject) {
-            console.table(jsonObject); /*temporary checking for valid response and data parsing*/
+
             const myObj = jsonObject['rental'];
-            console.table(myObj);
+
             document.getElementById("rents").innerHTML = myObj[0].name;
 
 
