@@ -28,71 +28,69 @@ function update() {
 }
 
 function loadTowns() {
-    const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+    const requestURL = 'data/data2.json';
     fetch(requestURL)
         .then(function(response) {
             return response.json();
         })
         .then(function(jsonObject) {
+            console.log(jsonObject);
 
-            const towns = jsonObject['towns'];
-            console.log(towns);
-            const preston = towns.filter(town => (town.name == 'Preston'));
-
-            const fishhaven = towns.filter(town => (town.name == 'Fish Haven'));
-
-            const sodasprings = towns.filter(town => (town.name == 'Soda Springs'));
+            addTour(jsonObject);
 
 
-            addTown(preston);
-            addTown(fishhaven);
-            addTown(sodasprings);
+
+
 
         });
 }
 
-function addTown(town) {
-
-    /* create elements to show */
-    let card = document.createElement('section');
-    let div = document.createElement('div');
-    let h1 = document.createElement('h1')
-    let p = document.createElement('p');
-    let h2 = document.createElement('h2');
-    let h3 = document.createElement('h3')
-    let h3b = document.createElement('h3')
-    let image = document.createElement('img');
-
-    h1.innerHTML = `<strong>${town[0].name}</strong>`;
-    p.innerHTML = `${town[0].motto}`;
-    h2.innerHTML = `Founded in :${town[0].yearFounded}`;
-    h3.innerHTML = `Current Population: ${town[0].currentPopulation}`;
-    h3b.innerHTML = `Average Rainfall: ${town[0].averageRainfall}`;
-
-    image.setAttribute('src', `images/beach2.jpg`);
-    image.setAttribute('alt', `Picture of the city of  ${town[0].name}`);
-    image.setAttribute('id', 'hometown');
-    h1.setAttribute('class', 'data');
-    p.setAttribute('class', 'data');
-    h2.setAttribute('class', 'data');
-    h3.setAttribute('class', 'data');
-    h3b.setAttribute('class', 'data');
-
-    div.setAttribute('class', 'information');
+function addTour(myObj) {
+    for (x in myObj.tours) {
 
 
-    /*Add content to the card and set it in div */
+        /* create elements to show */
+        let card = document.createElement('section');
+        let div = document.createElement('div');
+        let h1 = document.createElement('h1')
+        let p = document.createElement('p');
+        let h2 = document.createElement('h2');
+        let h3 = document.createElement('h3')
+        let a = document.createElement('a')
+        let image = document.createElement('img');
 
-    div.appendChild(h1);
-    div.appendChild(h2);
-    div.appendChild(p);
-    div.appendChild(h3);
-    div.appendChild(h3b);
-    card.appendChild(div);
-    card.appendChild(image);
+        /*fill up elements with the object content*/
 
-    document.querySelector('div.cards').appendChild(card);
+        h1.innerHTML = `<strong>${myObj.tours[x].name}</strong>`;
+        p.innerHTML = `${myObj.tours[x].atraction}`;
+        h2.innerHTML = `${myObj.tours[x].rating}`;
+        h3.innerHTML = `${myObj.tours[x].open}`;
+        a.innerHTML = ` Web Link `;
 
+        image.setAttribute('src', `${myObj.tours[x].picture}`);
+        image.setAttribute('alt', `Picture of  ${myObj.tours[x].name}`);
+        image.setAttribute('id', 'hometown');
+        h1.setAttribute('class', 'data');
+        p.setAttribute('class', 'data');
+        h2.setAttribute('class', 'data');
+        h3.setAttribute('class', 'data');
+        a.setAttribute('class', 'data');
+        a.setAttribute('href', `${myObj.tours[x].open}`);
+        div.setAttribute('class', 'information');
+
+
+        /*Add content to the card and set it in div */
+
+        div.appendChild(h1);
+        div.appendChild(h2);
+        div.appendChild(p);
+        div.appendChild(h3);
+        div.appendChild(a);
+        card.appendChild(div);
+        card.appendChild(image);
+
+        document.querySelector('div.cards').appendChild(card);
+    }
 }
 
 function setValue() {

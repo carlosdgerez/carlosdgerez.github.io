@@ -1,0 +1,57 @@
+{
+    "tours": [{
+            "id": "tour1",
+            "name": "Chankanaab Beach Adventure Park",
+            "atraction": "Swimming with dolphins & snorkeling",
+            "rating": "4.5 Exelent 2693 reviews",
+            "picture": "images/beach2.jpg",
+            "open": "8 am to 5 pm Mon to Sat"
+
+        },
+
+        {
+            "id": "tour2",
+            "name": "Playa Mia Grand Beach Park",
+            "atraction": "Popular stretch for swimming & sunning",
+            "rating": "4.3 Very Good 3358 reviews",
+            "picture": "images/beach3.jpg",
+            "open": "8 am  Mon "
+        },
+
+        {
+            "id": "tour3",
+            "name": "Isla de la Pasión",
+            "atraction": "Island",
+            "rating": "4.5 Exelent 26 reviews",
+            "picture": "images/beach4.jpg",
+            "open": "Always"
+        },
+        {
+            "id": "tour4",
+            "name": "San Gervasio",
+            "atraction": "San Gervasio is an archaeological site of the pre-Columbian Maya civilization.",
+            "rating": "4.5 Exelent 1693 reviews",
+            "picture": "images/beach5.jpg",
+            "open": "8 am to 5 pm Mon to Friday"
+        },
+
+        {
+            "id": "tour5",
+            "name": "Palancar Reef",
+            "atraction": "Swimming & snorkeling",
+            "rating": "4.5 Exelent 2693 reviews",
+            "picture": "images/beach6.jpg",
+            "open": "8 am to 5 pm Mon to Sat"
+        },
+        {
+            "id": "tour6",
+            "name": "Arrecifes de Cozumel National Park",
+            "atraction": "Swimming  & snorkeling",
+            "rating": "4.5 Exelent 2693 reviews",
+            "picture": "images/beach7.jpg",
+            "open": "8 am to 5 pm Mon to Sat"
+        }
+
+    ]
+
+}
