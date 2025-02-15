@@ -13,6 +13,12 @@ source "https://rubygems.org"
 
 gem "minimal-mistakes-jekyll"
 gem "jekyll-remote-theme"
+
+# Gemfile
+
+gem "jekyll", "~> 4.0"
+gem "minima", github: "jekyll/minima"
+
 group :jekyll_plugins do
   gem "jekyll-paginate"
   gem "jekyll-sitemap"
