@@ -1,6 +1,8 @@
 ---
 title: "My Work"
 layout: archive
+author: Carlos Gerez
+author_profile: true
 ---
 # <br>
 

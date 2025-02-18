@@ -1,7 +1,9 @@
 ---
-layout: splash
+layout: archive
 title: About
 permalink: /about/
+author: Carlos Gerez
+author_profile: true
 ---
 
 ## About
