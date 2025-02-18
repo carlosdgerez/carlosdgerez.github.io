@@ -1,9 +1,10 @@
 ---
-layout: archive
+layout: splash
 title: About
 permalink: /about/
 ---
 
+## About
 # Hi! I'm Carlos Gerez. 
 From a young age, I have been passionate about innovation and problem-solving. My journey in programming began in the 1990s in my home country, Uruguay, where I developed a structured approach to tackling challenges and finding solutions learnig programming languages like COBOL, Turbo Pascal, RPG II.
 I recently earned a Bachelor of Science in Applied Technology from BYU-Idaho, where I developed further my skills in software development, web technologies, machine learning, and AI neural networks. I also gained hands-on experience in network management and configuration, through virtual environments orchestration and collaborating with teams to build networks and manage configuration and security.
