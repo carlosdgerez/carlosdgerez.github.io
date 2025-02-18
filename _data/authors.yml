@@ -5,7 +5,7 @@ Carlos Gerez:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:name@email.com"
+      url: "mailto:carlosdgerez@yahoo.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://www.mywebsite.com"
+      url: "https://carlosdgerez.github.io/weatherSite/"
