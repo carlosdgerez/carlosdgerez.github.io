@@ -24,7 +24,7 @@ layout: archive
 <section id="{{ tag[0] | slugify | downcase }}" class="taxonomy__section">
     <h2 class="archive__subtitle">{{ tag[0] }}</h2>
     <div class="entries-{{ entries_layout }}">
-        {% for post in tag.last %}
+        {% for post in cat_tags %}
         {% include archive-single.html type=entries_layout %}
         {% endfor %}
     </div>

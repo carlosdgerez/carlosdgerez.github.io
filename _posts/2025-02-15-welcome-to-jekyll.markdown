@@ -1,6 +1,6 @@
 ---
 layout: posts
-title:  "Welcome to Jekyll!"
+title:  "Some change"
 date:   2025-02-15 18:25:10 +0000
 categories: work
 highlight_home: true
