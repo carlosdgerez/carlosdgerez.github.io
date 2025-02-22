@@ -1,6 +1,6 @@
 ---
 title: "My Work"
-layout: archive
+layout: categories_work
 author: Carlos Gerez
 author_profile: true
 ---
