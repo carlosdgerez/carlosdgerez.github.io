@@ -7,6 +7,6 @@ author: Carlos Gerez
 author_profile: true
 ---
 ![Carlos Gerez](/assets/images/fotoCanvas.JPG){: .avatar}
-# Hi, I am Carlos Gerez.
+# Hi, I am Carlos Gerez. - This is under construction 
 I am a programmer and system administrator recently finishing my University degree at BYU.  
 Take a look to my recent [work](/mywork).
