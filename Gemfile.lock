@@ -274,7 +274,6 @@ DEPENDENCIES
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.0)
   jekyll-algolia
-  jekyll-feed
   jekyll-gist
   jekyll-include-cache
   jekyll-paginate
