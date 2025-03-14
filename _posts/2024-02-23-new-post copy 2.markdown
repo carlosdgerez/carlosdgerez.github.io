@@ -2,7 +2,7 @@
 layout: posts
 title:  "This will be code"
 date:   2024-02-23 19:25:10 +0000
-categories: work
+categories: learning
 highlight_home: true
 tags: Code
 header:

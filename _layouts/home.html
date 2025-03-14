@@ -15,7 +15,7 @@ layout: archive
 {% assign entries_layout = page.entries_layout | default: 'grid' %}
 <div class="entries-{{ entries_layout }}">
   {% for post in posts %}  
-    {% if post.highlight_home and post.categories contains "work" %}
+    {% if post.highlight_home and post.categories contains "learning" %}
     {% include archive-single.html entries=posts type=entries_layout %}
     {% endif %}
   {% endfor %}
