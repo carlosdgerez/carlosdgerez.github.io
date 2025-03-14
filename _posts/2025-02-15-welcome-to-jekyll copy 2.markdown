@@ -2,7 +2,7 @@
 layout: posts
 title:  "Some change"
 date:   2025-02-15 18:25:10 +0000
-categories: work
+categories: future
 highlight_home: true
 tags: Education
 header:

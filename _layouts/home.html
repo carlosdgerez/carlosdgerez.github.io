@@ -24,7 +24,7 @@ layout: archive
 
 <div class="entries-{{ entries_layout }}">
     {% for post in posts %}  
-      {% if post.highlight_home and post.categories contains "article" %}
+      {% if post.highlight_home and post.categories contains "project" %}
       {% include archive-single.html entries=posts type=entries_layout %}
       {% endif %}
     {% endfor %}
@@ -34,7 +34,7 @@ layout: archive
 
 <div class="entries-{{ entries_layout }}">
     {% for post in posts %}  
-      {% if post.highlight_home and post.categories contains "article" %}
+      {% if post.highlight_home and post.categories contains "future" %}
       {% include archive-single.html entries=posts type=entries_layout %}
       {% endif %}
     {% endfor %}
