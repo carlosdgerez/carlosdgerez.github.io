@@ -1,6 +1,6 @@
 ---
 layout: posts
-title:  "Project 1"
+title:  "Infrastructure as Code"
 date:   2020-05-14 18:25:10 +0000
 categories: project
 highlight_home: true
