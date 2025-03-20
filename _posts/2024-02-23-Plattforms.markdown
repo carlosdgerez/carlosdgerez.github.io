@@ -7,8 +7,7 @@ highlight_home: true
 tags: Code
 header:
   overlay_image: /assets/images/pexels-pixabay-159298.jpg
-  teaser: /assets/images/pexels-olia-danilevich-4974922.jpg
-  
+  teaser: /assets/images/pexels-olia-danilevich-4974922.jpg 
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
