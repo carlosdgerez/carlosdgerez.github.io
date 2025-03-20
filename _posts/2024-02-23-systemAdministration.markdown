@@ -6,8 +6,8 @@ categories: learning
 highlight_home: true
 tags: Code
 header:
-  overlay_image: https://plus.unsplash.com/premium_photo-1678112179594-e24e588ee410?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29tcHV0aW5nfGVufDB8fDB8fHww
-  teaser: https://plus.unsplash.com/premium_photo-1678112179594-e24e588ee410?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29tcHV0aW5nfGVufDB8fDB8fHww
+  overlay_image: /assets/images/pexels-pixabay-247791.jpg
+  teaser: /assets/images/pexels-pixabay-247791.jpg
   caption: "Photo credit: [Unsplash: Oleg Ivanov](https://unsplash.com/@olegivanovpht)"
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
