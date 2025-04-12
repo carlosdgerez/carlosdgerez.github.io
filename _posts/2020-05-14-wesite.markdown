@@ -12,3 +12,8 @@ header:
 
 
 This is a website project using a weather API to make requests for 3 cities, using HTML, CSS and JavaScript.
+
+
+[Take a look to the site][take-a-look].
+
+[take-a-look]: https://carlosdgerez.github.io/weatherSite/
