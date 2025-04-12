@@ -10,6 +10,6 @@ header:
   teaser: /assets/images/pexels-markusspiske-1089438.jpg
 ---
 
-<br />
+
 
 I have learn several programming languages along my learning path. Here are some of them, and some code examples.
