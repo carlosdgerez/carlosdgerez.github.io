@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: single
 title:  "Machine Learning"
 date:   2023-05-14 18:25:10 +0000
 categories: project
