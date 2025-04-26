@@ -21,4 +21,4 @@ Here are some examples of R projects with interesting visuals:
 
 [investments]: https://shiny.byui.edu/connect/#/apps/e4a14775-df32-4e1a-9b5d-623b2253f609/access 
 [stocks]: https://shiny.byui.edu/connect/#/apps/c18944f2-a937-42e9-af92-6f28ea3f6ac3/access 
-[geodata]: https://shiny.byui.edu/content/13430d3e-251d-467f-ad3a-e75c5a3419cb
+[geodata]: https://carlosdgerez.github.io/Rproject/
