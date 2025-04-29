@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "System Administration"
-date:   2024-02-23 19:25:10 +0000
+date:   2024-12-23 19:25:10 +0000
 categories: learning
 highlight_home: true
 tags: Code
