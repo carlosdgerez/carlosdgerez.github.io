@@ -19,20 +19,26 @@ to further explain our work we developed a progresive set of tutorials that can 
 These are some of those tutorials. Monitoring tools like SIEM, Wireshark and IDS-sensors where also configured in diferent stages of the project. 
 
 Here are the final tutorials and diagrams of the final project:
-- [General Diagram] [investments]
-- [Stocks] [stocks]
-- [Geodata] [geodata]
-- [General Diagram] [investments]
-- [Stocks] [stocks]
+- [General Diagram] [diagram]
+- [Installing and initial configurations of firewalls] [firewalls]
+- [Active Directory in Windows] [ADWindows]
+- [Active Directory for Linux (yes we can)] [ADLinux]
+- [DNS and DHCP on Windows with firewall configurations] [DNS-DHCP]
 - [Geodata] [geodata]- [General Diagram] [investments]
 - [Stocks] [stocks]
 - [Geodata] [geodata]- [General Diagram] [investments]
 - [Stocks] [stocks]
 - [Geodata] [geodata]
 
-[investments]: https://shiny.byui.edu/content/e4a14775-df32-4e1a-9b5d-623b2253f609
-[stocks]: https://shiny.byui.edu/content/c18944f2-a937-42e9-af92-6f28ea3f6ac3
-[geodata]: https://shiny.byui.edu/content/13430d3e-251d-467f-ad3a-e75c5a3419cb
+[diagram]: https://carlosdgerez.github.io/tutorialsSystems/
+[firewalls]: https://carlosdgerez.github.io/tutorialsSystems/Firewalls.pdf
+[ADWindows]: https://carlosdgerez.github.io/tutorialsSystems/Active-Directory.pdf
+[ADLinux]: https://carlosdgerez.github.io/tutorialsSystems/ActiveDirectory&Cockpit.pdf
+[DNS-DHCP]: https://carlosdgerez.github.io/tutorialsSystems/DNS-DHCP-Windows-server.pdf
+[diagram]: https://carlosdgerez.github.io/tutorialsSystems/
+[diagram]: https://carlosdgerez.github.io/tutorialsSystems/
+[diagram]: https://carlosdgerez.github.io/tutorialsSystems/
+[diagram]: https://carlosdgerez.github.io/tutorialsSystems/
 <br />
  
 
