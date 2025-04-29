@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Infrastructure as Code"
-date:   2024-05-14 18:25:10 +0000
+date:   "`r Sys.Date()`"
 categories: project
 highlight_home: true
 tags: Education
@@ -12,6 +12,7 @@ header:
 ---
 You’ll find in this area projects related to Infrastructure as Code. Vagrant files, Puppet, Ansible, and Kubernetes deployments.
 
-I developed a personal project dedicated to test a network environment developed with Vagrant files and using puppet for deployment of a database for a Q2A app with a load balancer and 2 servers. [Look here for the code] [vagrant-project]. 
+I developed a personal project dedicated to test a network environment developed with Vagrant files and using puppet for deployment of a database for a Q2A app with a load balancer and 2 servers. [Look here for the code] [vagrant-project] and [learn here] [readme-vagrant] how to implement yourself this lab in your machine. 
 
 [vagrant-project]: https://github.com/carlosdgerez/mynetworklab1
+[readme-vagrant]: https://github.com/carlosdgerez/mynetworklab1/blob/master/README.md 
