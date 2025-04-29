@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Infrastructure as Code"
-date:   "`r Sys.Date()`"
+date:  2025-02-15 18:25:10 +0000
 categories: project
 highlight_home: true
 tags: Education
