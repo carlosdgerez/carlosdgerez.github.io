@@ -19,6 +19,6 @@ Here are some examples of R projects with interesting visuals:
 - [Stocks] [stocks]
 - [Geodata] [geodata]
 
-[investments]: https://shiny.byui.edu/connect/#/apps/e4a14775-df32-4e1a-9b5d-623b2253f609/access 
-[stocks]: https://shiny.byui.edu/connect/#/apps/c18944f2-a937-42e9-af92-6f28ea3f6ac3/access 
+[investments]: https://carlosdgerez.github.io/dygraphs/
+[stocks]: https://carlosdgerez.github.io/stocksAnalisis/
 [geodata]: https://carlosdgerez.github.io/Rproject/
