@@ -18,7 +18,7 @@ The diferent zones are guarded by firewalls that are configured to restrict and 
 to further explain our work we developed a progresive set of tutorials that can serve as a guide to perform the same task in your choose platform. 
 These are some of those tutorials. Monitoring tools like SIEM, Wireshark and IDS-sensors where also configured in diferent stages of the project. 
 
-Here are the final tutorials and diagrams of the final project:
+Here are the final tutorials and diagrams of the project:
 - [General Diagram] [diagram]
 - [Create VMs in vSphere] [VM]
 - [Installing and initial configurations of firewalls] [firewalls]
@@ -32,6 +32,7 @@ Here are the final tutorials and diagrams of the final project:
 - [Web services with Privoxy and Acrylic installation] [webProxy]
 - [Tiered App (Q2A) Apache and MariaDB installation with a load balancer] [TApp]
 
+
 [diagram]: https://carlosdgerez.github.io/tutorialsSystems/
 [firewalls]: https://carlosdgerez.github.io/tutorialsSystems/Firewalls.pdf
 [ADWindows]: https://carlosdgerez.github.io/tutorialsSystems/Active-Directory.pdf
@@ -44,6 +45,7 @@ Here are the final tutorials and diagrams of the final project:
 [VM]: https://carlosdgerez.github.io/tutorialsSystems/ServerVMs.pdf
 [webProxy]: https://carlosdgerez.github.io/tutorialsSystems/Acrylic-dns-privoxy-web-proxy.pdf
 [TApp]: https://carlosdgerez.github.io/tutorialsSystems/TieredApp.pdf
+
 <br />
  
 
