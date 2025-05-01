@@ -11,7 +11,7 @@ header:
 ---
 
 
-This is a website project using a weather API to make requests for 3 cities, using HTML, CSS and JavaScript.
+ __This is a website project using a weather API to make requests for 3 cities, using HTML, CSS and JavaScript.__
 
 
 [Take a look to the site][take-a-look].
