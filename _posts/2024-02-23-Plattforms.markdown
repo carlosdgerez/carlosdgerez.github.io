@@ -2,7 +2,7 @@
 layout: single
 title:  "Plattforms"
 date:   2024-02-23 19:25:10 +0000
-categories: learning
+categories: learnin
 highlight_home: true
 tags: Code
 header:
