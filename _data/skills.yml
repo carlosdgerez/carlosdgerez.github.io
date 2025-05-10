@@ -23,11 +23,13 @@ technical:
    level: Advanced
  - title: Virtualization (VMware, Oracle VirtualBox, Microsoft Hyper-V, Vagrant)
    level: Advanced
-- title: Version Control (GitHub, Git)
+ - title: Version Control (GitHub, Git)
    level: Advanced
 
 soft:
- - title: Writing
+ - title: Writing (English, Spanish)
+   level: Advance
+ - title: Writing (Norweagian)
    level: Intermediate
  - title: Leadership
    level: Intermediate
