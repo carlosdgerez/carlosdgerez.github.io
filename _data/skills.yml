@@ -3,9 +3,27 @@ technical:
    level: Intermediate
  - title: HTML5
    level: Intermediate
- - title: JavaScrpt
+ - title: JavaScript
    level: Intermediate
  - title: Python
+   level: Advanced
+ - title: Java
+   level: Basic
+ - title: R
+   level: Advanced
+ - title: OOP
+   level: Advanced
+ - title: Yaml
+   level: Basic 
+ - title: Puppet
+   level: Intermediate
+ - title: Databases (SQL, MySQL, PostgreSQL, MariaDB)
+   level: Advanced
+ - title: Os (Linux, Windows)
+   level: Advanced
+ - title: Virtualization (VMware, Oracle VirtualBox, Microsoft Hyper-V, Vagrant)
+   level: Advanced
+- title: Version Control (GitHub, Git)
    level: Advanced
 
 soft:
@@ -13,3 +31,7 @@ soft:
    level: Intermediate
  - title: Leadership
    level: Intermediate
+ - title: Languages (Norweagian, English)
+   level: Fluent
+ - title: Languages (Spanish)
+   level: Mother language
